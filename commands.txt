@@ -1,0 +1,30 @@
+
+## Commands To run the Bot.
+python -m rasa_core_sdk.endpoint --actions actions 
+python rasa_utils\bot.py --core models\dialogue
+yarn serve
+
+
+Training of the NLU model didn't change much from the way it was shown in the video. To train and test the model run:
+
+Training the NLU model
+    python nlu_model.py
+
+Training the Rasa Core model
+The biggest change in how Rasa Core model works is that custom action 'action_weather' now needs to run on a separate server. That server has to be configured in a 'endpoints.yml' file. This is how to train and run the dialogue management model:
+
+Start the custom action server by running:
+    python -m rasa_core_sdk.endpoint --actions actions
+
+Open a new terminal and train the Rasa Core model by running:
+    python dialogue_management_model.py
+
+Talk to the chatbot once it's loaded.
+Starting the interactive training session:
+The process of running the interactive session is very similar to training the Rasa Core model:
+
+Make sure the custom actions server is running:
+    python -m rasa_core_sdk.endpoint --actions actions
+
+Start the interactive training session by running:
+    python train_interactive.py

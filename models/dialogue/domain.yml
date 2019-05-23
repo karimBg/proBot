@@ -1,0 +1,234 @@
+%YAML 1.1
+---
+actions:
+- utter_ask_continue
+- utter_noworries
+- action_job
+- action_sub_role
+- utter_ask_experience_years
+- action_show_details
+- action_internship
+- action_acquaintance
+- utter_apply_submit
+- utter_ask_Design_role
+- utter_nice_to_meet_you
+- utter_ask_apply
+- action_location
+- utter_ask_contact
+- utter_ask_name
+- utter_location
+- utter_ask_role
+- utter_wrong_email
+- utter_default
+- utter_wrong_role
+- utter_chitchat
+- utter_ask_jobRef
+- utter_greet
+- utter_ask_phone_number
+- utter_goodbye
+- action_contact
+- utter_ask_cv_link
+- utter_slots_values
+- utter_ask_Development_role
+- utter_ask_detail
+- utter_apply_slots_values
+- utter_ask_email
+- utter_wrong_experience_years
+- utter_detail
+- utter_how_are_you
+- action_store_applicant
+config:
+  store_entities_as_slots: true
+entities:
+- jobRef
+- job_title
+- internshipRef
+- JobOptions
+- cv_link
+- email
+- degree
+- experience_years
+- phone_number
+- name
+- sub_role
+- role
+- contact
+forms:
+- jobs_form
+- internship_form
+- apply_form
+intents:
+- affirm:
+    use_entities: true
+- apply_job:
+    use_entities: false
+- inform_apply:
+    use_entities: true
+- inform_job:
+    use_entities: true
+- inform_internship:
+    use_entities: true
+- ask_detail:
+    use_entities: true
+- greet:
+    use_entities: true
+- how_are_you:
+    use_entities: true
+- nice_to_meet_you:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- inform_contact:
+    use_entities: true
+- inform_location:
+    use_entities: true
+- acquaintance:
+    use_entities: true
+- deny:
+    use_entities: true
+- stop:
+    use_entities: true
+slots:
+  JobOptions:
+    auto_fill: true
+    initial_value: None
+    type: rasa_core.slots.TextSlot
+  contact:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cv_link:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  degree:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  email:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  experience_years:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  internshipRef:
+    auto_fill: true
+    initial_value: None
+    type: rasa_core.slots.UnfeaturizedSlot
+  jobRef:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  phone_number:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  role:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  sub_role:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_apply_slots_values:
+  - text: "I collected information about applicants using those parameters\n - jobRef:\
+      \ {jobRef}\n - name: {name}\n - phone_number: {phone_number}\n - email: {email}\n\
+      \ - experience_years: {experience_years}\n - cv_link: {cv_link}"
+  utter_apply_submit:
+  - text: All done!
+  utter_ask_Design_role:
+  - buttons:
+    - payload: UI
+      title: only UI
+    - payload: UX
+      title: only UX
+    - payload: UI\UX
+      title: mix of both
+    text: That's great. We do have an opening in UI/UX Design 😃
+  utter_ask_Development_role:
+  - buttons:
+    - payload: Back-End Development
+      title: Back-End Development
+    - payload: Front-End Development
+      title: Front-End Development
+    - payload: Fullstack
+      title: Fullstack
+    text: Why don't you pick your prefered development role 👇
+  utter_ask_apply:
+  - text: Would you like to apply?
+  - text: I am going to ask you a few question, do you want to apply ?
+  utter_ask_cv_link:
+  - text: ' send us a link with your resume or Linkedin Account'
+  utter_ask_detail:
+  - text: Would you Like to learn more about this offer ?
+  utter_ask_email:
+  - text: And, your email?
+  utter_ask_experience_years:
+  - text: approximately how many years of relevant experience on the same tech piece?
+  utter_ask_jobRef:
+  - text: enter the job reference you decided on
+  utter_ask_location:
+  - text: In what location?
+  utter_ask_name:
+  - text: what's your name?
+  utter_ask_phone_number:
+  - text: We need your phone number to contact you
+  utter_ask_role:
+  - buttons:
+    - payload: Software Development
+      title: Software Development
+    - payload: UI/UX Design
+      title: UI/UX Design
+    - payload: Network and Security
+      title: Network & Security
+    text: What kind of role are you interested in?
+  utter_default:
+  - text: sorry, I didn't understand you, please try input something else
+  utter_detail:
+  - text: 'learn more about about this offers example: description ,mission ...'
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: Hi there, friend!
+  - text: Hi!
+  - text: Hey!
+  - text: Hey there!
+  - text: Good day!
+  - text: Hello!
+  - text: Greetings!
+  utter_how_are_you:
+  - text: Doing great, thanks!
+  - text: I'm doing very well. Thanks!
+  - text: Feeling wonderful!
+  - text: Wonderful! Thanks for asking.
+  utter_nice_to_meet_you:
+  - text: It's nice meeting you, too.
+  - text: Likewise. I'm looking forward to helping you out.
+  - text: Nice meeting you, as well.
+  - text: The pleasure is mine.
+  utter_slots_values:
+  - text: "what is kind of job you are looking for:\n - job_title: {job_title}\n"
+  utter_wrong_cv_link:
+  - text: enter a valide linkedin link
+  utter_wrong_email:
+  - text: Please give a valid email. e.g.. islem@gmail.com
+  utter_wrong_experience_years:
+  - text: experience years should be a positive integer, please try again

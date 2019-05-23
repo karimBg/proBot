@@ -1,0 +1,81 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "sub_role",
+        "jobRef",
+        "internshipRef",
+        "role"
+      ]
+    },
+    "action_job": {
+      "slots": [
+        "jobRef"
+      ]
+    },
+    "apply_form": {
+      "slots": [
+        "email",
+        "requested_slot",
+        "cv_link",
+        "phone_number",
+        "experience_years",
+        "jobRef",
+        "name"
+      ]
+    },
+    "action_store_applicant": {
+      "slots": []
+    },
+    "action_acquaintance": {
+      "slots": []
+    },
+    "utter_apply_slots_values": {
+      "slots": []
+    },
+    "internship_form": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "action_deactivate_form": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "utter_how_are_you": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "action_show_details": {
+      "slots": []
+    },
+    "utter_nice_to_meet_you": {
+      "slots": []
+    },
+    "action_contact": {
+      "slots": []
+    }
+  },
+  "python": "3.6.8",
+  "max_histories": [
+    2,
+    5,
+    3
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.form_policy.FormPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ],
+  "trained_at": "20190523-133235",
+  "rasa_core": "0.13.4",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.3"
+}

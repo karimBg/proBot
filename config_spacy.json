@@ -1,0 +1,5 @@
+{
+    "pipeline": "tensorflow_embedding",
+    "path": "./models/current",
+    "data": "./data/nlu.json"
+}
