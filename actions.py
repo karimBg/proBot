@@ -229,7 +229,7 @@ class ApplyForm(FormAction):
                                  dispatcher: CollectingDispatcher,
                                  tracker: Tracker,
                                  domain: Dict[Text, Any]) -> Any:
-        CV_LINK_REGEX = re.compile(r"[https:\\/\\/]*[www.]*[a-z]*.[com|org|tn|fr|me]+[\\/in\\/]*[a-z A-z 0-9 -]+")
+        CV_LINK_REGEX = re.compile(r"[https:\\/\\/]*[www.]*[a-z]*.*[com|org|tn|fr|me]+*[\\/in\\/]*[a-z A-z 0-9 -]+")
         if CV_LINK_REGEX.match(value):
             return value
         else:
@@ -258,8 +258,8 @@ class actionstoreApplicant(Action):
         phone_number=tracker.get_slot("phone_number")
         email = tracker.get_slot("email")
         cv_link=tracker.get_slot("cv_link")
-        userdb = "189c6a81-abde-4388-a757-a50da959e8da"
-        saveApplicantData(self,jobRef,name,experience_years,phone_number,email,cv_link, userdb)
-        dispatcher.utter_message("applicant saved")
+        user_id = (tracker.current_state())["sender_id"]
+        saveApplicantData(jobRef,name,experience_years,phone_number,email,cv_link, user_id)
+        dispatcher.utter_message("we got your data, we will contact you soon")
         return[]
         

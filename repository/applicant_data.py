@@ -22,6 +22,3 @@ def saveApplicantData(jobRef ,Name, Experience_years, Phone_number, Email, cv_li
     ('{jobRef}', '{Name}', {Experience_years}, '{Phone_number}', '{Email}', '{cv_link}', '{Apply_date}', '{IdUserDb}')
     ''')
     cnxn.commit()
-    print("it worked maybe ?")
-
-saveApplicantData("job-14785", "islem", 4, "87875454", "email", "dio", "5587499e-a518-4303-946c-cc9fc96b5bba")

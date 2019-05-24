@@ -14384,3 +14384,2317 @@ There is no memorised next action
 Predicted next action using policy_2_KerasPolicy
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hey'
+Creating a new tracker for id 'hey'.
+Received user message 'hey' with intent '{'name': 'greet', 'confidence': 0.9645196199417114}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '29'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Greetings!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+Creating a new tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'.
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.9406654238700867}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, None, None, {'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '29'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi there, friend!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want a job'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, {'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '23'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Software Development'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'Software Development' with intent '{'name': 'inform_job', 'confidence': 0.9499921202659607}' and entities '[{'start': 0, 'end': 20, 'value': 'Software Development', 'entity': 'role', 'confidence': 0.8269188318086809, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: None
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Back-End Development'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'Back-End Development' with intent '{'name': 'inform_job', 'confidence': 0.9498732686042786}' and entities '[{'start': 0, 'end': 20, 'value': 'Back-End Development', 'entity': 'sub_role', 'confidence': 0.9045985221090915, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Failed to run custom action 'action_job'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_job'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Users\asus\islemenv3\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_job' ended with events '[]'
+There is no active form
+Current tracker state [{'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want a job'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ask_apply' with prob 0.90.
+Action 'utter_ask_apply' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to ask you a few question, do you want to apply ?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'yes'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9697529077529907}' and entities '[]'
+Logged UserUtterance - tracker now has 23 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_sub_role' with prob 0.73.
+Calling action endpoint to run action 'action_sub_role'.
+Failed to run custom action 'action_sub_role'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_sub_role'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Users\asus\islemenv3\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_sub_role': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_job' with prob 0.52.
+Calling action endpoint to run action 'action_job'.
+Failed to run custom action 'action_job'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_job'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Users\asus\islemenv3\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_job' ended with events '[]'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_sub_role': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'hello'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.9406654238700867}' and entities '[]'
+Logged UserUtterance - tracker now has 27 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_sub_role': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Greetings!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_sub_role': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want a job'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 31 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_sub_role': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_job': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Software Development'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'Software Development' with intent '{'name': 'inform_job', 'confidence': 0.9499921202659607}' and entities '[{'start': 0, 'end': 20, 'value': 'Software Development', 'entity': 'role', 'confidence': 0.8269188318086809, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 36 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Back-End Development'
+Recreating tracker for id '1f4f7ffb-e79e-40d1-9c09-e1392fe1a518'
+Received user message 'Back-End Development' with intent '{'name': 'inform_job', 'confidence': 0.9498732686042786}' and entities '[{'start': 0, 'end': 20, 'value': 'Back-End Development', 'entity': 'sub_role', 'confidence': 0.9045985221090915, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 41 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Action 'action_job' ended with events '['SlotSet(key: jobRef, value: None)']'
+Bot utterance 'BotUttered(text:  We don't have an open position in Back-End Development, please try again, data: {
+  "elements": null,
+  "buttons": [],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'hello'
+Creating a new tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'.
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.9406654238700867}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, None, None, {'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '29'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hi!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want  a job'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'i want  a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, {'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '23'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Software Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Software Development' with intent '{'name': 'inform_job', 'confidence': 0.9499921202659607}' and entities '[{'start': 0, 'end': 20, 'value': 'Software Development', 'entity': 'role', 'confidence': 0.8269188318086809, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: None
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Back-End Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Back-End Development' with intent '{'name': 'inform_job', 'confidence': 0.9498732686042786}' and entities '[{'start': 0, 'end': 20, 'value': 'Back-End Development', 'entity': 'sub_role', 'confidence': 0.9045985221090915, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Action 'action_job' ended with events '['SlotSet(key: jobRef, value: None)']'
+Bot utterance 'BotUttered(text: These are the available positions that i know about!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "job-73575",
+      "title": "job-73575\nback end developer"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'job-73575\nback end developer'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'job-73575' with intent '{'name': 'inform_apply', 'confidence': 0.9534411430358887}' and entities '[{'start': 0, 'end': 9, 'value': 'job-73575', 'entity': 'jobRef', 'confidence': 0.7511004000985771, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_apply' with prob 1.00.
+Action 'utter_ask_apply' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to ask you a few question, do you want to apply ?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'yes'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9697529077529907}' and entities '[]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['Form(apply_form)', 'SlotSet(key: requested_slot, value: name)']'
+Bot utterance 'BotUttered(text: what's your name?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Islem Mezghani'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Islem Mezghani' with intent '{'name': 'inform_apply', 'confidence': 0.9554509520530701}' and entities '[{'start': 0, 'end': 14, 'value': 'Islem Mezghani', 'entity': 'name', 'confidence': 0.8699327025000319, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 33 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: None
+	requested_slot: name
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: name, value: Islem Mezghani)', 'SlotSet(key: requested_slot, value: experience_years)']'
+Bot utterance 'BotUttered(text: approximately how many years of relevant experience on the same tech piece?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'2'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message '2' with intent '{'name': 'inform_apply', 'confidence': 0.9695401191711426}' and entities '[{'start': 0, 'end': 1, 'value': '2', 'entity': 'experience_years', 'confidence': 0.8081173123448023, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 40 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: None
+	requested_slot: experience_years
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: experience_years, value: 2)', 'SlotSet(key: requested_slot, value: phone_number)']'
+Bot utterance 'BotUttered(text: We need your phone number to contact you, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'50730571'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message '50730571' with intent '{'name': 'inform_apply', 'confidence': 0.9695401191711426}' and entities '[{'start': 0, 'end': 8, 'value': '50730571', 'entity': 'phone_number', 'confidence': 0.8504213057622284, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 47 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: phone_number
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: phone_number, value: 50730571)', 'SlotSet(key: requested_slot, value: email)']'
+Bot utterance 'BotUttered(text: And, your email?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'islem@email.com'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'islem@email.com' with intent '{'name': 'inform_apply', 'confidence': 0.9619647264480591}' and entities '[{'start': 0, 'end': 15, 'value': 'islem@email.com', 'entity': 'email', 'confidence': 0.7709324947426921, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: email
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: email, value: islem@email.com)', 'SlotSet(key: requested_slot, value: cv_link)']'
+Bot utterance 'BotUttered(text:  send us a link with your resume or Linkedin Account, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'https://www.linkedin.com/in/islem-mezghani-1a4369144/'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'https://www.linkedin.com/in/islem-mezghani-1a4369144/' with intent '{'name': 'inform_apply', 'confidence': 0.9489468932151794}' and entities '[{'start': 0, 'end': 53, 'value': 'https://www.linkedin.com/in/islem-mezghani-1a4369144/', 'entity': 'cv_link', 'confidence': 0.8343663553208209, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 61 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: cv_link
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: cv_link, value: https://www.linkedin.com/in/islem-mezghani-1a4369144/)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+There is no active form
+Current tracker state [{'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '42'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_store_applicant' with prob 1.00.
+Calling action endpoint to run action 'action_store_applicant'.
+Failed to run custom action 'action_store_applicant'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_store_applicant'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Users\asus\islemenv3\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_store_applicant' ended with events '[]'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want a job'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 68 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '23'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Software Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Software Development' with intent '{'name': 'inform_job', 'confidence': 0.9499921202659607}' and entities '[{'start': 0, 'end': 20, 'value': 'Software Development', 'entity': 'role', 'confidence': 0.8269188318086809, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 73 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Back-End Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Back-End Development' with intent '{'name': 'inform_job', 'confidence': 0.9498732686042786}' and entities '[{'start': 0, 'end': 20, 'value': 'Back-End Development', 'entity': 'sub_role', 'confidence': 0.9045985221090915, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 78 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Action 'action_job' ended with events '['SlotSet(key: jobRef, value: job-73575)']'
+Bot utterance 'BotUttered(text: These are the available positions that i know about!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "job-73575",
+      "title": "job-73575\nback end developer"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'job-73575\nback end developer'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'job-73575' with intent '{'name': 'inform_apply', 'confidence': 0.9534411430358887}' and entities '[{'start': 0, 'end': 9, 'value': 'job-73575', 'entity': 'jobRef', 'confidence': 0.7511004000985771, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 84 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_apply' with prob 1.00.
+Action 'utter_ask_apply' ended with events '[]'
+Bot utterance 'BotUttered(text: Would you like to apply?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'yes'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9697529077529907}' and entities '[]'
+Logged UserUtterance - tracker now has 88 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['Form(apply_form)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+There is no active form
+Current tracker state [{'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '42'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_store_applicant' with prob 1.00.
+Calling action endpoint to run action 'action_store_applicant'.
+Failed to run custom action 'action_store_applicant'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_store_applicant'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Users\asus\islemenv3\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_store_applicant' ended with events '[]'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'hello'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.9406654238700867}' and entities '[]'
+Logged UserUtterance - tracker now has 95 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '29'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Greetings!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want a job'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 99 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Software Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Software Development' with intent '{'name': 'inform_job', 'confidence': 0.9499921202659607}' and entities '[{'start': 0, 'end': 20, 'value': 'Software Development', 'entity': 'role', 'confidence': 0.8269188318086809, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 104 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'intent_greet': 1.0, 'slot_role_0': 1.0, 'prev_utter_greet': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Back-End Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Back-End Development' with intent '{'name': 'inform_job', 'confidence': 0.9498732686042786}' and entities '[{'start': 0, 'end': 20, 'value': 'Back-End Development', 'entity': 'sub_role', 'confidence': 0.9045985221090915, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 109 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Action 'action_job' ended with events '['SlotSet(key: jobRef, value: job-73575)']'
+Bot utterance 'BotUttered(text: These are the available positions that i know about!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "job-73575",
+      "title": "job-73575\nback end developer"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'job-73575\nback end developer'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'job-73575' with intent '{'name': 'inform_apply', 'confidence': 0.9534411430358887}' and entities '[{'start': 0, 'end': 9, 'value': 'job-73575', 'entity': 'jobRef', 'confidence': 0.7511004000985771, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 115 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_apply' with prob 1.00.
+Action 'utter_ask_apply' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to ask you a few question, do you want to apply ?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'yes'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9697529077529907}' and entities '[]'
+Logged UserUtterance - tracker now has 119 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['Form(apply_form)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+There is no active form
+Current tracker state [{'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '42'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_store_applicant' with prob 1.00.
+Calling action endpoint to run action 'action_store_applicant'.
+Action 'action_store_applicant' ended with events '[]'
+Bot utterance 'BotUttered(text: applicant saved, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want to know more about this job'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'i want to know more about this job' with intent '{'name': 'acquaintance', 'confidence': 0.5827676057815552}' and entities '[]'
+Logged UserUtterance - tracker now has 127 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '14'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_acquaintance' with prob 1.00.
+Calling action endpoint to run action 'action_acquaintance'.
+Action 'action_acquaintance' ended with events '[]'
+Bot utterance 'BotUttered(text: get acquaintancee62dd421-d387-48a4-a1e6-7152fbbd2b7c, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'prev_action_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want a job'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 131 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_apply_form': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'prev_action_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '23'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'prev_action_store_applicant': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'prev_action_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'UI/UX Design'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'UI/UX Design' with intent '{'name': 'inform_job', 'confidence': 0.9219450354576111}' and entities '[{'start': 0, 'end': 12, 'value': 'UI/UX Design', 'entity': 'role', 'confidence': 0.895675498366181, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 136 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'prev_action_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'intent_acquaintance': 1.0, 'prev_action_acquaintance': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'mix of both'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'UI/UX' with intent '{'name': 'inform_job', 'confidence': 0.9623329043388367}' and entities '[{'start': 0, 'end': 5, 'value': 'UI/UX', 'entity': 'sub_role', 'confidence': 0.7530104052353134, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 141 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Action 'action_job' ended with events '['SlotSet(key: jobRef, value: job-73575)']'
+Bot utterance 'BotUttered(text: These are the available positions that i know about!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "job-51336",
+      "title": "job-51336\ndesigner"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'job-51336\ndesigner'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'job-51336' with intent '{'name': 'inform_apply', 'confidence': 0.9534411430358887}' and entities '[{'start': 0, 'end': 9, 'value': 'job-51336', 'entity': 'jobRef', 'confidence': 0.8532423346653666, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 147 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_apply' with prob 1.00.
+Action 'utter_ask_apply' ended with events '[]'
+Bot utterance 'BotUttered(text: Would you like to apply?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'no'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'no' with intent '{'name': 'deny', 'confidence': 0.9409140348434448}' and entities '[]'
+Logged UserUtterance - tracker now has 151 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ask_detail' with prob 0.60.
+Action 'utter_ask_detail' ended with events '[]'
+Bot utterance 'BotUttered(text: Would you Like to learn more about this offer ?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'yes'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9697529077529907}' and entities '[]'
+Logged UserUtterance - tracker now has 155 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_show_details' with prob 0.99.
+Calling action endpoint to run action 'action_show_details'.
+Failed to run custom action 'action_show_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_show_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Users\asus\islemenv3\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_show_details' ended with events '[]'
+There is no active form
+Current tracker state [{'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'prev_action_show_details': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'description'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'description' with intent '{'name': 'ask_detail', 'confidence': 0.9313082098960876}' and entities '[{'start': 0, 'end': 11, 'value': 'description', 'entity': 'JobOptions', 'confidence': 0.7972340470085768, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 159 events
+Current slot values: 
+	JobOptions: description
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'prev_action_show_details': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_goodbye' with prob 0.24.
+Action 'utter_goodbye' ended with events '[]'
+Bot utterance 'BotUttered(text: Bye bye :(, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'prev_action_show_details': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'prev_utter_goodbye': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'i want a job'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 163 events
+Current slot values: 
+	JobOptions: description
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'prev_action_show_details': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'prev_utter_goodbye': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'prev_action_show_details': 1.0, 'intent_affirm': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'prev_utter_goodbye': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'UI/UX Design'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'UI/UX Design' with intent '{'name': 'inform_job', 'confidence': 0.9219450354576111}' and entities '[{'start': 0, 'end': 12, 'value': 'UI/UX Design', 'entity': 'role', 'confidence': 0.895675498366181, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 168 events
+Current slot values: 
+	JobOptions: description
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'intent_ask_detail': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'prev_utter_goodbye': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'intent_ask_detail': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'prev_utter_goodbye': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'mix of both'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'UI/UX' with intent '{'name': 'inform_job', 'confidence': 0.9623329043388367}' and entities '[{'start': 0, 'end': 5, 'value': 'UI/UX', 'entity': 'sub_role', 'confidence': 0.7530104052353134, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 173 events
+Current slot values: 
+	JobOptions: description
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Action 'action_job' ended with events '['SlotSet(key: jobRef, value: job-51336)']'
+Bot utterance 'BotUttered(text: These are the available positions that i know about!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "job-51336",
+      "title": "job-51336\ndesigner"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_role_0': 1.0, 'prev_utter_ask_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'job-51336\ndesigner'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'job-51336' with intent '{'name': 'inform_apply', 'confidence': 0.9534411430358887}' and entities '[{'start': 0, 'end': 9, 'value': 'job-51336', 'entity': 'jobRef', 'confidence': 0.8532423346653666, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 179 events
+Current slot values: 
+	JobOptions: description
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_apply' with prob 1.00.
+Action 'utter_ask_apply' ended with events '[]'
+Bot utterance 'BotUttered(text: I am going to ask you a few question, do you want to apply ?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_sub_role': 1.0, 'slot_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'entity_role': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'no'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'no' with intent '{'name': 'deny', 'confidence': 0.9409140348434448}' and entities '[]'
+Logged UserUtterance - tracker now has 183 events
+Current slot values: 
+	JobOptions: description
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ask_detail' with prob 0.60.
+Action 'utter_ask_detail' ended with events '[]'
+Bot utterance 'BotUttered(text: Would you Like to learn more about this offer ?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_action_job': 1.0, 'slot_role_0': 1.0, 'entity_sub_role': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'description'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'description' with intent '{'name': 'ask_detail', 'confidence': 0.9313082098960876}' and entities '[{'start': 0, 'end': 11, 'value': 'description', 'entity': 'JobOptions', 'confidence': 0.7972340470085768, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 188 events
+Current slot values: 
+	JobOptions: description
+	contact: None
+	cv_link: https://www.linkedin.com/in/islem-mezghani-1a4369144/
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-51336
+	location: None
+	name: Islem Mezghani
+	phone_number: 50730571
+	requested_slot: None
+	role: UI/UX Design
+	sub_role: UI/UX
+There is no active form
+Current tracker state [{'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_show_details' with prob 1.00.
+Calling action endpoint to run action 'action_show_details'.
+Failed to run custom action 'action_show_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_show_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Users\asus\islemenv3\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\asus\islemenv3\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'action_show_details' ended with events '[]'
+There is no active form
+Current tracker state [{'prev_utter_ask_apply': 1.0, 'slot_role_0': 1.0, 'intent_inform_apply': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_jobRef': 1.0}, {'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'prev_utter_ask_detail': 1.0, 'slot_role_0': 1.0, 'slot_sub_role_0': 1.0, 'intent_deny': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_ask_detail': 1.0, 'slot_role_0': 1.0, 'entity_JobOptions': 1.0, 'slot_sub_role_0': 1.0, 'prev_action_show_details': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'i want a job'
+Creating a new tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'.
+Received user message 'i want a job' with intent '{'name': 'inform_job', 'confidence': 0.884911060333252}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '23'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_role' with prob 1.00.
+Action 'utter_ask_role' ended with events '[]'
+Bot utterance 'BotUttered(text: What kind of role are you interested in?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Software Development",
+      "title": "Software Development"
+    },
+    {
+      "payload": "UI/UX Design",
+      "title": "UI/UX Design"
+    },
+    {
+      "payload": "Network and Security",
+      "title": "Network & Security"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Software Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Software Development' with intent '{'name': 'inform_job', 'confidence': 0.9499921202659607}' and entities '[{'start': 0, 'end': 20, 'value': 'Software Development', 'entity': 'role', 'confidence': 0.8269188318086809, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: None
+There is no active form
+Current tracker state [None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_sub_role' with prob 1.00.
+Calling action endpoint to run action 'action_sub_role'.
+Action 'action_sub_role' ended with events '[]'
+There is no active form
+Current tracker state [{'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'slot_JobOptions_0': 1.0, 'slot_role_0': 1.0, 'prev_action_sub_role': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Back-End Development'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Back-End Development' with intent '{'name': 'inform_job', 'confidence': 0.9498732686042786}' and entities '[{'start': 0, 'end': 20, 'value': 'Back-End Development', 'entity': 'sub_role', 'confidence': 0.9045985221090915, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 12 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}, {'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'slot_JobOptions_0': 1.0, 'slot_role_0': 1.0, 'prev_action_sub_role': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '9'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_job' with prob 1.00.
+Calling action endpoint to run action 'action_job'.
+Action 'action_job' ended with events '['SlotSet(key: jobRef, value: None)']'
+Bot utterance 'BotUttered(text: These are the available positions that i know about!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "job-73575",
+      "title": "job-73575\nback end developer"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'prev_utter_ask_role': 1.0, 'slot_JobOptions_0': 1.0, 'intent_inform_job': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'slot_JobOptions_0': 1.0, 'slot_role_0': 1.0, 'prev_action_sub_role': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'job-73575\nback end developer'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'job-73575' with intent '{'name': 'inform_apply', 'confidence': 0.9534411430358887}' and entities '[{'start': 0, 'end': 9, 'value': 'job-73575', 'entity': 'jobRef', 'confidence': 0.7511004000985771, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'slot_JobOptions_0': 1.0, 'slot_role_0': 1.0, 'prev_action_sub_role': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_apply' with prob 1.00.
+Action 'utter_ask_apply' ended with events '[]'
+Bot utterance 'BotUttered(text: Would you like to apply?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_JobOptions_0': 1.0, 'slot_role_0': 1.0, 'prev_action_sub_role': 1.0, 'intent_inform_job': 1.0, 'entity_role': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'yes'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'yes' with intent '{'name': 'affirm', 'confidence': 0.9697529077529907}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: Software Development
+	sub_role: Back-End Development
+There is no active form
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['Form(apply_form)', 'SlotSet(key: requested_slot, value: name)']'
+Bot utterance 'BotUttered(text: what's your name?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Islem Mezghani'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'Islem Mezghani' with intent '{'name': 'inform_apply', 'confidence': 0.9554509520530701}' and entities '[{'start': 0, 'end': 14, 'value': 'Islem Mezghani', 'entity': 'name', 'confidence': 0.8699327025000319, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 29 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: None
+	requested_slot: name
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: name, value: Islem Mezghani)', 'SlotSet(key: requested_slot, value: experience_years)']'
+Bot utterance 'BotUttered(text: approximately how many years of relevant experience on the same tech piece?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'2'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message '2' with intent '{'name': 'inform_apply', 'confidence': 0.9695401191711426}' and entities '[{'start': 0, 'end': 1, 'value': '2', 'entity': 'experience_years', 'confidence': 0.8081173123448023, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 36 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: None
+	requested_slot: experience_years
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: experience_years, value: 2)', 'SlotSet(key: requested_slot, value: phone_number)']'
+Bot utterance 'BotUttered(text: We need your phone number to contact you, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'52730571'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message '52730571' with intent '{'name': 'inform_apply', 'confidence': 0.9695401191711426}' and entities '[{'start': 0, 'end': 8, 'value': '52730571', 'entity': 'phone_number', 'confidence': 0.7301263027315639, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 43 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 52730571
+	requested_slot: phone_number
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: phone_number, value: 52730571)', 'SlotSet(key: requested_slot, value: email)']'
+Bot utterance 'BotUttered(text: And, your email?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'islem@email.com'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'islem@email.com' with intent '{'name': 'inform_apply', 'confidence': 0.9619647264480591}' and entities '[{'start': 0, 'end': 15, 'value': 'islem@email.com', 'entity': 'email', 'confidence': 0.7709324947426921, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 50 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 52730571
+	requested_slot: email
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Action 'apply_form' ended with events '['SlotSet(key: email, value: islem@email.com)', 'SlotSet(key: requested_slot, value: cv_link)']'
+Bot utterance 'BotUttered(text:  send us a link with your resume or Linkedin Account, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'https://www.linkedin.com/m/login/'
+Recreating tracker for id 'e62dd421-d387-48a4-a1e6-7152fbbd2b7c'
+Received user message 'https://www.linkedin.com/m/login/' with intent '{'name': 'inform_apply', 'confidence': 0.9655413031578064}' and entities '[]'
+Logged UserUtterance - tracker now has 56 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: islem@email.com
+	experience_years: 2
+	internshipRef: None
+	jobRef: job-73575
+	location: None
+	name: Islem Mezghani
+	phone_number: 52730571
+	requested_slot: cv_link
+	role: Software Development
+	sub_role: Back-End Development
+There is an active form 'apply_form'
+Current tracker state [{'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0}, {'entity_sub_role': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_inform_job': 1.0, 'prev_action_job': 1.0}, {'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}]
+There is a memorised next action '45'
+Predicted next action using policy_0_FormPolicy
+Predicted next action 'apply_form' with prob 1.00.
+Calling action endpoint to run action 'apply_form'.
+Failed to validate slot cv_link with action apply_form
+There is an active form 'apply_form'
+Current tracker state [{'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'prev_action_listen': 1.0, 'entity_jobRef': 1.0}, {'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}, {'active_form_apply_form': 1.0, 'prev_apply_form': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}, {'active_form_apply_form': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_deactivate_form' with prob 0.58.
+Action 'action_deactivate_form' ended with events '['Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+There is no active form
+Current tracker state [{'prev_utter_ask_apply': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'entity_jobRef': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}, {'active_form_apply_form': 1.0, 'prev_apply_form': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0, 'intent_affirm': 1.0}, {'active_form_apply_form': 1.0, 'intent_inform_apply': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0}, {'intent_inform_apply': 1.0, 'prev_action_deactivate_form': 1.0, 'slot_JobOptions_0': 1.0, 'slot_sub_role_0': 1.0, 'slot_role_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

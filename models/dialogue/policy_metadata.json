@@ -2,9 +2,9 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "sub_role",
         "jobRef",
         "internshipRef",
+        "sub_role",
         "role"
       ]
     },
@@ -17,11 +17,11 @@
       "slots": [
         "email",
         "requested_slot",
-        "cv_link",
-        "phone_number",
         "experience_years",
-        "jobRef",
-        "name"
+        "phone_number",
+        "name",
+        "cv_link",
+        "jobRef"
       ]
     },
     "action_store_applicant": {
@@ -62,7 +62,7 @@
       "slots": []
     }
   },
-  "python": "3.6.8",
+  "python": "3.6.4",
   "max_histories": [
     2,
     5,
@@ -74,8 +74,8 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190523-133235",
-  "rasa_core": "0.13.4",
+  "trained_at": "20190524-025135",
+  "rasa_core": "0.13.3",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.3"
 }

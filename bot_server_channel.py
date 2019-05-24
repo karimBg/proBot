@@ -87,8 +87,7 @@ class BotServerOutputChannel(OutputChannel):
 class BotServerInputChannel(InputChannel):
 
     def __init__(
-        self, agent=None, preprocessor=None, port=5002, message_store=FileMessageStore()
-    ):
+        self, agent=None, preprocessor=None, port=5002, message_store=FileMessageStore()):
         logging.basicConfig(level="DEBUG")
         logging.captureWarnings(True)
         self.message_store = message_store

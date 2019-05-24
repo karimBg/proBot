@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\MON PC\\Desktop\\python\\job_chatbot_3\\job_bot\\./models/current\\default\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
-all_model_checkpoint_paths: "C:\\Users\\MON PC\\Desktop\\python\\job_chatbot_3\\job_bot\\./models/current\\default\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
+model_checkpoint_path: "C:\\Users\\asus\\Desktop\\pfe\\proBot\\./models/current\\default\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\asus\\Desktop\\pfe\\proBot\\./models/current\\default\\nlu\\intent_classifier_tensorflow_embedding.ckpt"

@@ -29,7 +29,7 @@ from rasa_core.utils import EndpointConfig
 from rasa_core.run import serve_application
 from rasa_core import config
 from rasa_core.interpreter import RasaNLUInterpreter
-from rasa_core.bot_server_channel import BotServerInputChannel
+from bot_server_channel import BotServerInputChannel
 
 logger = logging.getLogger()  # get the root logger
 

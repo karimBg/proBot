@@ -112,3 +112,7 @@
     - utter_ask_detail
 * ask_detail
     - action_show_details
+    
+##details story
+* ask_detail
+    - action_show_details
