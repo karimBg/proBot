@@ -54,7 +54,7 @@ def get_job_data(job_option, JobRef, user_id):
       job_data = row[0]
 
    if(type(job_data) is datetime.datetime):
-      return job_data.strftime('%d/%m/%Y')
+      return job_data.strftime(f'''%d/%m/%Y''')
 
    return job_data
 

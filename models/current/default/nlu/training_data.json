@@ -1729,7 +1729,7 @@
     "regex_features": [
       {
         "name": "cv_link",
-        "pattern": "[https:\\/\\/]*[www.]*[a-z]*.[com | org | tn | fr | me]+[\\/in\\/]*[a-z A-z 0-9 -]+"
+        "pattern": "[https://]*[www.]*linkedin.[com | org | tn | fr | me]+[\\/in\\/]*[a-z A-z 0-9 -]+"
       },
       {
         "name": "email",
@@ -1771,7 +1771,8 @@
         "synonyms": [
           "back end development",
           "back-end",
-          "back end"
+          "back end",
+          "backend development"
         ]
       },
       {

@@ -229,7 +229,7 @@ class ApplyForm(FormAction):
                                  dispatcher: CollectingDispatcher,
                                  tracker: Tracker,
                                  domain: Dict[Text, Any]) -> Any:
-        CV_LINK_REGEX = re.compile(r"[https:\\/\\/]*[www.]*[a-z]*.*[com|org|tn|fr|me]+*[\\/in\\/]*[a-z A-z 0-9 -]+")
+        CV_LINK_REGEX = re.compile(r'''[https:\/\/]*[www.]*linkedin.[com | org | tn | fr | me]+[\\/in\\/]*[a-z A-z 0-9 -]+''')
         if CV_LINK_REGEX.match(value):
             return value
         else:

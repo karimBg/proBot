@@ -97,8 +97,10 @@
     - utter_ask_apply
 * affirm 
     - apply_form
-    - form{"name": null}
     - action_store_applicant
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
 
 ## Generated Story -870223808643095922
 * inform_job
@@ -112,7 +114,7 @@
     - utter_ask_detail
 * ask_detail
     - action_show_details
-    
+
 ##details story
 * ask_detail
     - action_show_details
