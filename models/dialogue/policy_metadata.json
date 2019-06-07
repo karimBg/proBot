@@ -1,5 +1,8 @@
 {
   "action_fingerprints": {
+    "utter_greet": {
+      "slots": []
+    },
     "action_listen": {
       "slots": [
         "sub_role",
@@ -7,9 +10,6 @@
         "internshipRef",
         "role"
       ]
-    },
-    "action_acquaintance": {
-      "slots": []
     },
     "internship_form": {
       "slots": [
@@ -21,30 +21,7 @@
         "requested_slot"
       ]
     },
-    "action_show_details": {
-      "slots": []
-    },
-    "action_contact": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_goodbye": {
-      "slots": []
-    },
-    "apply_form": {
-      "slots": [
-        "jobRef",
-        "requested_slot",
-        "email",
-        "phone_number",
-        "cv_link",
-        "name",
-        "experience_years"
-      ]
-    },
-    "utter_apply_slots_values": {
+    "action_acquaintance": {
       "slots": []
     },
     "utter_nice_to_meet_you": {
@@ -57,21 +34,46 @@
     },
     "utter_how_are_you": {
       "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "action_show_details": {
+      "slots": []
+    },
+    "action_contact": {
+      "slots": []
+    },
+    "apply_form": {
+      "slots": [
+        "experience_years",
+        "jobRef",
+        "phone_number",
+        "email",
+        "requested_slot",
+        "cv_link",
+        "name"
+      ]
+    },
+    "utter_apply_slots_values": {
+      "slots": []
     }
   },
   "python": "3.6.4",
   "max_histories": [
     2,
     5,
-    3
+    3,
+    null
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
     "rasa_core.policies.form_policy.FormPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.keras_policy.KerasPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20190528-111003",
+  "trained_at": "20190606-225058",
   "rasa_core": "0.13.3",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.3"

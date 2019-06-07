@@ -12,6 +12,7 @@ import re
 from repository.job_data import get_job_data, list_jobs, getRoleID ,generate_job_buttons
 from repository.applicant_data import saveApplicantData 
 from repository.internship_data import list_internships, generate_internship_buttons
+from repository.entrepriseInfo import getEmail , getIntroduction, getLocation, getPhone
 
 
 # jobs action
@@ -43,7 +44,7 @@ class actionSubRole(Action):
         role = tracker.get_slot("role")
         dev_sub_role_list=[{"payload":"Back-End Development","title":"Back-End Development"},{"payload":"Front-End Development","title":"Front-End Development"},{"payload":"Fullstack","title":"Fullstack"}]
         design_sub_role_list=[{"payload":"UX" ,"title": "UX only"},{"payload":"UI","title": "UI only"},{"payload":"UI/UX","title":"mix of both"}]
-        network_sub_role_list=[{"payload":"Security" ,"title": "Security Specialist"},{"payload":"Network Specialist","title": "Network Specialist"},{"payload":"Security Network","title":"Security Network"}]
+        network_sub_role_list=[{"payload":"Security Specialist" ,"title": "Security Specialist"},{"payload":"Network Specialist","title": "Network Specialist"},{"payload":"Security Network","title":"Security Network"}]
         Marketing_sub_role_list=[{"payload":"Digital Marketing" ,"title": "Digital Marketing"},{"payload":"Product Marketing","title": "Product Marketing"}]
         btnmsg=""
         btnlist =[]
@@ -59,7 +60,6 @@ class actionSubRole(Action):
         elif(role =="Marketing"):
             btnmsg="which one are you you more interested in?😃"
             btnlist=Marketing_sub_role_list
-
         if(btnlist):
             buttons = []
             for btn in btnlist:
@@ -124,7 +124,9 @@ class Actioncontact(Action):
     def run(self, dispatcher, tracker, domain):
         user_id = (tracker.current_state())["sender_id"]        
         #get contact of user_id 
-        dispatcher.utter_message("hello")
+        email = getEmail(user_id)
+        phone_number = getPhone(user_id)
+        dispatcher.utter_message("call or email us on"+phone_numbee+"or" +email )
         return []
 
 # Job Option Action
@@ -135,7 +137,6 @@ class actionShowDetails(Action):
         jobRef = tracker.get_slot("jobRef")
         job_option = tracker.get_slot("JobOptions")
         #user_id = (tracker.current_state())["sender_id"]
-        user_id = "189c6a81-abde-4388-a757-a50da959e8da"
         #getting data from DB
         job_data = get_job_data(job_option, jobRef, user_id)
 
@@ -149,7 +150,24 @@ class actionAcquaintance(Action):
     def run(self, dispatcher, tracker, domain):
         user_id = (tracker.current_state())["sender_id"]
         #data from data base here 
-        dispatcher.utter_message("get acquaintance" + user_id)
+        intro = getIntroduction(user_id)
+        if not intro:
+            dispatcher.utter_template("utter_acquaintance")
+        else:
+            dispatcher.utter_message(intro)
+        return []
+        
+class actionLocation(Action):
+    def name(self):
+        return "action_acquaintance"
+    def run(self, dispatcher, tracker, domain):
+        user_id = (tracker.current_state())["sender_id"]
+        #data from data base here 
+        loc = getLocation(user_id)
+        if not loc:
+            dispatcher.utter_template("utter_not_available")
+        else:
+            dispatcher.utter_message(loc)
         return []
 
 class ApplyForm(FormAction):

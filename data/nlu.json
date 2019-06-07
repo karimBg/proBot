@@ -1,1804 +1,332 @@
-{
-  "rasa_nlu_data": {
-    "common_examples": [
-      {
-        "intent": "affirm",
-        "text": "yeah"
-      },
-      {
-        "intent": "affirm",
-        "text": "correct"
-      },
-      {
-        "intent": "affirm",
-        "text": "ye"
-      },
-      {
-        "intent": "affirm",
-        "text": "uh yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "let's do it"
-      },
-      {
-        "intent": "affirm",
-        "text": "yeah"
-      },
-      {
-        "intent": "affirm",
-        "text": "uh yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "um yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "that's correct"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "right"
-      },
-      {
-        "intent": "affirm",
-        "text": "yea"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes right"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes and i dont care"
-      },
-      {
-        "intent": "affirm",
-        "text": "right on"
-      },
-      {
-        "intent": "affirm",
-        "text": "i love that"
-      },
-      {
-        "intent": "deny",
-        "text": "no"
-      },
-      {
-        "intent": "deny",
-        "text": "no new selection"
-      },
-      {
-        "intent": "deny",
-        "text": "no thanks"
-      },
-      {
-        "intent": "deny",
-        "text": "no thank you"
-      },
-      {
-        "intent": "deny",
-        "text": "uh no"
-      },
-      {
-        "intent": "deny",
-        "text": "breath no"
-      },
-      {
-        "intent": "deny",
-        "text": "do you have something else"
-      },
-      {
-        "intent": "deny",
-        "text": "no this does not work for me"
-      },
-      {
-        "intent": "stop",
-        "text": "ok then you cant help me"
-      },
-      {
-        "intent": "stop",
-        "text": "that was shit, you're not helping"
-      },
-      {
-        "intent": "stop",
-        "text": "you can't help me"
-      },
-      {
-        "intent": "stop",
-        "text": "you can't help me with what i need"
-      },
-      {
-        "intent": "stop",
-        "text": "i guess you can't help me then"
-      },
-      {
-        "intent": "stop",
-        "text": "ok i guess you can't help me"
-      },
-      {
-        "intent": "stop",
-        "text": "that's not what i want"
-      },
-      {
-        "intent": "stop",
-        "text": "ok, but that doesnt help me"
-      },
-      {
-        "intent": "stop",
-        "text": "this is leading to nothing"
-      },
-      {
-        "intent": "stop",
-        "text": "this conversation is not really helpful"
-      },
-      {
-        "intent": "stop",
-        "text": "you cannot help me with what I want"
-      },
-      {
-        "intent": "stop",
-        "text": "I think you cant help me"
-      },
-      {
-        "intent": "stop",
-        "text": "hm i don't think you can do what i want"
-      },
-      {
-        "intent": "stop",
-        "text": "stop"
-      },
-      {
-        "intent": "stop",
-        "text": "stop go back"
-      },
-      {
-        "intent": "stop",
-        "text": "do you get anything?"
-      },
-      {
-        "intent": "stop",
-        "text": "and you call yourself bot company? pff"
-      },
-      {
-        "intent": "stop",
-        "text": "and that's it?"
-      },
-      {
-        "intent": "stop",
-        "text": "nothing else?"
-      },
-      {
-        "intent": "greet",
-        "text": "Hello"
-      },
-      {
-        "intent": "goodbye",
-        "text": "goodbye"
-      },
-      {
-        "intent": "inform_job",
-        "text": "I'm looking for a job"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 17,
-            "end": 37,
-            "value": "Software Development",
-            "entity": "role"
-          }
-        ],
-        "text": "I'm interested inSoftware Development"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 16,
-            "end": 33,
-            "value": "Digital Marketing",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "what do have of Digital Marketing food"
-      },
-      {
-        "intent": "inform_job",
-        "text": "id like a job"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 24,
-            "end": 41,
-            "value": "Product Marketing",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "im looking for a job in Product Marketing"
-      },
-      {
-        "intent": "inform_job",
-        "text": "can you employ me"
-      },
-      {
-        "intent": "inform_job",
-        "text": "i'm searching for a job"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 20,
-            "end": 32,
-            "value": "UI/UX Design",
-            "entity": "role"
-          }
-        ],
-        "text": "I want to work as a UI/UX Design"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 16,
-            "end": 37,
-            "value": "Front-End Development",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "I specialize in Front-End Development"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 12,
-            "end": 14,
-            "value": "UI",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "I prefer in UI"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 20,
-            "end": 22,
-            "value": "UX",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "I want to work as a UX"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 20,
-            "end": 40,
-            "value": "Back-End Development",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "I want to work as a Back-End Development"
-      },
-      {
-        "intent": "inform_job",
-        "text": "I'm looking for a job"
-      },
-      {
-        "intent": "inform_job",
-        "text": "I'm looking for a new job"
-      },
-      {
-        "intent": "inform_job",
-        "text": "any jobs offers"
-      },
-      {
-        "intent": "inform_job",
-        "text": "i want to work for you"
-      },
-      {
-        "intent": "inform_job",
-        "text": "what are the jobs in your firm"
-      },
-      {
-        "intent": "inform_job",
-        "text": "i want a job"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 20,
-            "value": "Software Development",
-            "entity": "role"
-          }
-        ],
-        "text": "Software Development"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 20,
-            "value": "Software Development",
-            "entity": "role"
-          }
-        ],
-        "text": "Software Development role"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 9,
-            "end": 26,
-            "value": "Digital Marketing",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "how bout Digital Marketing"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 11,
-            "end": 23,
-            "value": "UI/UX Design",
-            "entity": "role"
-          }
-        ],
-        "text": "what about UI/UX Design job"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 11,
-            "end": 17,
-            "value": "UI/UX Design",
-            "entity": "role"
-          }
-        ],
-        "text": "what about design job"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 13,
-            "end": 30,
-            "value": "Product Marketing",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "uh how about Product Marketing type job"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 19,
-            "value": "Security Specialist",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "Security Specialist"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 18,
-            "value": "Network Specialist",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "Network Specialist"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Marketing",
-            "entity": "role"
-          }
-        ],
-        "text": "Marketing"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 4,
-            "end": 12,
-            "value": "Marketing",
-            "entity": "role"
-          }
-        ],
-        "text": "uhm Marketing i think"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 18,
-            "value": "network & security",
-            "entity": "role"
-          }
-        ],
-        "text": "network & security"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 20,
-            "value": "Network and Security",
-            "entity": "role"
-          }
-        ],
-        "text": "Network and Security"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "UI",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "UI"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "UX",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "UX"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "UI/UX",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "UI/UX"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Fullstack",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "Fullstack"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 21,
-            "value": "Front-End Development",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "Front-End Development"
-      },
-      {
-        "intent": "inform_job",
-        "entities": [
-          {
-            "start": 0,
-            "end": 20,
-            "value": "Back-End Development",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "Back-End Development"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-54125",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-54125"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-02146",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-02146"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-87732",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-87732"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-98523",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-98523"
-      },
-      {
-        "intent": "goodbye",
-        "text": "see ya"
-      },
-      {
-        "intent": "greet",
-        "text": "Hi"
-      },
-      {
-        "intent": "greet",
-        "text": "Hi Bot"
-      },
-      {
-        "intent": "goodbye",
-        "text": "Bye"
-      },
-      {
-        "intent": "inform_job",
-        "text": "can you employ me "
-      },
-      {
-        "intent": "inform_job",
-        "text": "i'm searching for a job "
-      },
-      {
-        "intent": "inform_job",
-        "text": "I'm looking for a job"
-      },
-      {
-        "intent": "inform_job",
-        "text": "I'm looking for a new job"
-      },
-      {
-        "intent": "inform_job",
-        "text": "any jobs offers"
-      },
-      {
-        "intent": "inform_job",
-        "text": "i wanna work for you"
-      },
-      {
-        "intent": "inform_job",
-        "text": "i want to work for you"
-      },
-      {
-        "intent": "inform_job",
-        "text": "what are the jobs in your firm"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "tell me about your personality"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "why are you here"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "talk about yourself"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "tell me some stuff about you"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "talk some stuff about yourself"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "I want to know you better"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "I want to know more about you"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "who are you"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "tell me about yourself"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "tell me about you"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "about yourself"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "describe yourself"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "introduce yourself"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "say about you"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "what are you"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "define yourself"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "what is your personality"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "all about you"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "what are you upto?"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "who the hell are you?"
-      },
-      {
-        "intent": "acquaintance",
-        "text": "what can you do for me?"
-      },
-      {
-        "intent": "greet",
-        "text": "howdy"
-      },
-      {
-        "intent": "greet",
-        "text": "hey there"
-      },
-      {
-        "intent": "greet",
-        "text": "hey"
-      },
-      {
-        "intent": "greet",
-        "text": "greetings"
-      },
-      {
-        "intent": "greet",
-        "text": "I greet you"
-      },
-      {
-        "intent": "greet",
-        "text": "hi there"
-      },
-      {
-        "intent": "greet",
-        "text": "hello there"
-      },
-      {
-        "intent": "greet",
-        "text": "lovely day isn't it"
-      },
-      {
-        "intent": "greet",
-        "text": "hello again"
-      },
-      {
-        "intent": "greet",
-        "text": "just going to say hi"
-      },
-      {
-        "intent": "greet",
-        "text": "hi there"
-      },
-      {
-        "intent": "greet",
-        "text": "a good day"
-      },
-      {
-        "intent": "greet",
-        "text": "afternoon"
-      },
-      {
-        "intent": "greet",
-        "text": "hello hi"
-      },
-      {
-        "intent": "greet",
-        "text": "heya"
-      },
-      {
-        "intent": "greet",
-        "text": "hey"
-      },
-      {
-        "intent": "greet",
-        "text": "hi"
-      },
-      {
-        "intent": "greet",
-        "text": "hi"
-      },
-      {
-        "intent": "greet",
-        "text": "Hello"
-      },
-      {
-        "intent": "greet",
-        "text": "hey"
-      },
-      {
-        "intent": "greet",
-        "text": "hey man"
-      },
-      {
-        "intent": "greet",
-        "text": "hey there"
-      },
-      {
-        "intent": "greet",
-        "text": "hey buddy"
-      },
-      {
-        "intent": "greet",
-        "text": "oka"
-      },
-      {
-        "intent": "greet",
-        "text": "yo man"
-      },
-      {
-        "intent": "greet",
-        "text": "hola"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your morning so far"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you getting on"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how's your day going"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "is everything all right"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you doing?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are the things going"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "are you alright"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "are you okay?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you feeling"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you going?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "is everything okay"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you today?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how do you do?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how do you feel?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how have you been?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is it going?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your day"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your day going"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your evening"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how was your day"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "are you having a good day"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "hope your day is going well"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "hope you re having a pleasant evening"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how's life?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "I'm fine and you"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your life"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how has your day been"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your morning going"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how has your day been going"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how about you?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your day being"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how is your day going on"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how your day is going"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "what was your day like"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "what about your day"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how's your day"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you doing this morning"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how do you do?"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you"
-      },
-      {
-        "intent": "how_are_you",
-        "text": "how are you"
-      },
-      {
-        "intent": "nice_to_meet_you",
-        "text": "nice to meet you"
-      },
-      {
-        "intent": "nice_to_meet_you",
-        "text": "it was nice meeting you"
-      },
-      {
-        "intent": "inform_job",
-        "text": "what are the available positions at your firm"
-      },
-      {
-        "intent": "inform_internship",
-        "text": "i'm looking for internship opportunity at your firm"
-      },
-      {
-        "intent": "inform_internship",
-        "text": "what are the available project for internship"
-      },
-      {
-        "intent": "inform_contact",
-        "text": "how can i call you"
-      },
-      {
-        "intent": "inform_contact",
-        "entities": [
-          {
-            "start": 13,
-            "end": 18,
-            "value": "email",
-            "entity": "contact"
-          }
-        ],
-        "text": "what is your email"
-      },
-      {
-        "intent": "inform_contact",
-        "entities": [
-          {
-            "start": 13,
-            "end": 19,
-            "value": "phone ",
-            "entity": "contact"
-          }
-        ],
-        "text": "what is your phone number"
-      },
-      {
-        "intent": "inform_industies",
-        "text": "what is your type of work"
-      },
-      {
-        "intent": "inform_industies",
-        "text": "tell me about you solution"
-      },
-      {
-        "intent": "inform_job",
-        "text": "any jobs offeres available "
-      },
-      {
-        "intent": "inform_job",
-        "text": "I'm graduated and searching for a job"
-      },
-      {
-        "intent": "ask_detail",
-        "entities": [
-          {
-            "start": 0,
-            "end": 11,
-            "value": "description",
-            "entity": "JobOptions"
-          }
-        ],
-        "text": "description"
-      },
-      {
-        "intent": "ask_detail",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "mission",
-            "entity": "JobOptions"
-          }
-        ],
-        "text": "mission"
-      },
-      {
-        "intent": "ask_detail",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "date",
-            "entity": "JobOptions"
-          }
-        ],
-        "text": "date"
-      },
-      {
-        "intent": "apply_job",
-        "text": "I want to apply"
-      },
-      {
-        "intent": "apply_job",
-        "text": "how do i apply"
-      },
-      {
-        "intent": "apply_job",
-        "text": "i want to apply for that position"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 11,
-            "end": 17,
-            "value": "UI/UX Design",
-            "entity": "role"
-          }
-        ],
-        "text": "what about design job"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 13,
-            "end": 30,
-            "value": "Product Marketing",
-            "entity": "sub_role"
-          }
-        ],
-        "text": "uh how about Product Marketing type job"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 3,
-            "end": 4,
-            "value": "7",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "um 7"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 3,
-            "end": 4,
-            "value": "9",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "um 9"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 3,
-            "end": 4,
-            "value": "1",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "um 1 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 3,
-            "end": 4,
-            "value": "2",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "um 2 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "9",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "nine years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 6,
-            "end": 7,
-            "value": "3",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "about 3 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 1,
-            "value": "0",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "0 i think"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 1,
-            "value": "4",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "4 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 1,
-            "value": "6",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "6 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 17,
-            "value": "islem@outlook.com",
-            "entity": "email"
-          }
-        ],
-        "text": "islem@outlook.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 17,
-            "value": "islem7505@gmail.com",
-            "entity": "email"
-          }
-        ],
-        "text": "islem7505@gmail.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 17,
-            "value": "hendakriaa@gmail.com",
-            "entity": "email"
-          }
-        ],
-        "text": "hendakriaa@gmail.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 17,
-            "value": "montassar@yahoo.fr",
-            "entity": "email"
-          }
-        ],
-        "text": "montassar@yahoo.fr"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 17,
-            "value": "salah@yahoo.com",
-            "entity": "email"
-          }
-        ],
-        "text": "salah@yahoo.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 17,
-            "value": "mohamedX@outlook.com",
-            "entity": "email"
-          }
-        ],
-        "text": "mohamedX@outlook.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 15,
-            "value": "islem@gmail.com",
-            "entity": "email"
-          }
-        ],
-        "text": "islem@gmail.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 15,
-            "value": "islem@yahoo.com",
-            "entity": "email"
-          }
-        ],
-        "text": "islem@yahoo.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 53,
-            "value": "https://www.linkedin.com/in/islem-mezghani-1a4369144/",
-            "entity": "cv_link"
-          }
-        ],
-        "text": "https://www.linkedin.com/in/islem-mezghani-1a4369144/"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 28,
-            "value": "https://www.linkedin.com/in/4554521hjhj",
-            "entity": "cv_link"
-          }
-        ],
-        "text": "https://www.linkedin.com/in/4554521hjhj"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "74562369",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "74562369"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "92365878",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "92365878"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "96258741",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "96258741"
-      },
-            
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "24563789",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "24563789"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "23842128",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "23842128"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "27896365",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "27896365"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 11,
-            "end": 19,
-            "value": "41278112",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "call me on 41278112"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 14,
-            "value": "Islem Mezghani",
-            "entity": "name"
-          }
-        ],
-        "text": "Islem Mezghani"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Mohsen X",
-            "entity": "name"
-          }
-        ],
-        "text": "Mohsen X"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 13,
-            "value": "Mohamed Karim",
-            "entity": "name"
-          }
-        ],
-        "text": "Mohamed Karim"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 14,
-            "value": "Amira Jallouli",
-            "entity": "name"
-          }
-        ],
-        "text": "Amira Jallouli"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 11,
-            "value": "Henda Kriaa",
-            "entity": "name"
-          }
-        ],
-        "text": "Henda Kriaa"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-93233",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-93233"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-03236",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-03236"
-      }, 
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-59896",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-59896"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-54212",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-54212"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-78454",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-78454"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-41212",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-41212"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-32321",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-32321"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-54212",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-54212"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "job-12345",
-            "entity": "jobRef"
-          }
-        ],
-        "text": "job-12345"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 13,
-            "value": "Mohamed Karim",
-            "entity": "name"
-          }
-        ],
-        "text": "Mohamed Karim"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 1,
-            "value": "5",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "5"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 1,
-            "value": "2",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "2"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 1,
-            "value": "8",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "8 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "10",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "10 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "16",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "16 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 2,
-            "value": "20",
-            "entity": "experience_years"
-          }
-        ],
-        "text": "20 years"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "50730571",
-            "entity": "phone_number"
-          }
-        ],
-        "text": "50730571"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 15,
-            "value": "islem@email.com",
-            "entity": "email"
-          }
-        ],
-        "text": "islem@email.com"
-      },
-      {
-        "intent": "inform_apply",
-        "entities": [
-          {
-            "start": 0,
-            "end": 53,
-            "value": "https://www.linkedin.com/in/islem-mezghani-1a4369144/",
-            "entity": "cv_link"
-          }
-        ],
-        "text": "https://www.linkedin.com/in/islem-mezghani-1a4369144/"
-      }
-    ],
-    "regex_features": [
-      {
-        "name": "internshipRef",
-        "pattern": "Ref-[0-9]{5}"
-      },
-      {
-        "name": "cv_link",
-        "pattern": "[https:\/\/]*[www.]*linkedin.[com | org | tn | fr | me]+[\\/in\\/]*[a-z A-z 0-9 -]+"
-      },
-      {
-        "name": "email",
-        "pattern": "[a-z A-Z]+[0-9 a-z A-Z]*@[a-z A-Z]+[.][a-z A-Z]+"
-      },
-      {
-        "name": "jobRef",
-        "pattern": "job-[0-9]{5}"
-      },
-      {
-        "name": "phone_number",
-        "pattern": "[0-9]{8}"
-      },
-      {
-        "name": "experience_years",
-        "pattern": "[0-9][0-9]?"
-      }
-    ],
-    "lookup_tables": [],
-    "entity_synonyms": [
-      {
-        "value": "UI/UX Design",
-        "synonyms": [
-          "design"
-        ]
-      },
-      {
-        "value": "9",
-        "synonyms": [
-          "nine"
-        ]
-      },
-      {
-        "value": "Back-End Development",
-        "synonyms": [
-          "back end development",
-          "back-end",
-          "back end",
-          "backend development"
-        ]
-      },
-      {
-        "value": "Front-End Development",
-        "synonyms": [
-          "front end development",
-          "front-end",
-          "font end",
-          "Front End"
-        ]
-      },
-      {
-        "value": "Network and Security",
-        "synonyms": [
-          "network & security"
-        ]
-      },
-      {
-        "value": "Marketing",
-        "synonyms": [
-          "marketing",
-          "markeing"
-        ]
-      }
-    ]
+## intent:acquaintance
+- tell me about your personality
+- why are you here
+- talk about yourself
+- tell me some stuff about you
+- talk some stuff about yourself
+- I want to know you better
+- I want to know more about you
+- who are you
+- tell me about yourself
+- tell me about you
+- about yourself
+- describe yourself
+- introduce yourself
+- say about you
+- what are you
+- define yourself
+- what is your personality
+- all about you
+- what are you upto?
+- who the hell are you?
+- what can you do for me?
 
-  }
-}
+## intent:affirm
+- yeah
+- correct
+- ye
+- uh yes
+- let's do it
+- yeah
+- uh yes
+- um yes
+- yes
+- that's correct
+- yes yes
+- right
+- yea
+- yes
+- yes right
+- yes and i dont care
+- right on
+- i love that
+
+## intent:apply_job
+- I want to apply
+- how do i apply
+- i want to apply for that position
+
+## intent:ask_detail
+- [description](JobOptions)
+- [mission](JobOptions)
+- [date](JobOptions)
+
+## intent:deny
+- no
+- no new selection
+- no thanks
+- no thank you
+- uh no
+- breath no
+- do you have something else
+- no this does not work for me
+
+## intent:goodbye
+- goodbye
+- see ya
+- Bye
+
+## intent:greet
+- Hello
+- Hi
+- Hi Bot
+- howdy
+- hey there
+- hey
+- greetings
+- I greet you
+- hi there
+- hello there
+- lovely day isn't it
+- hello again
+- just going to say hi
+- hi there
+- a good day
+- afternoon
+- hello hi
+- heya
+- hey
+- hi
+- hi
+- Hello
+- hey
+- hey man
+- hey there
+- hey buddy
+- oka
+- yo man
+- hola
+
+## intent:how_are_you
+- how is your morning so far
+- how are you getting on
+- how's your day going
+- how are you?
+- is everything all right
+- how are you doing?
+- how are the things going
+- are you alright
+- are you okay?
+- how are you feeling
+- how are you going?
+- is everything okay
+- how are you today?
+- how do you do?
+- how do you feel?
+- how have you been?
+- how is it going?
+- how is your day
+- how is your day going
+- how is your evening
+- how was your day
+- are you having a good day
+- hope your day is going well
+- hope you re having a pleasant evening
+- how's life?
+- I'm fine and you
+- how is your life
+- how has your day been
+- how is your morning going
+- how has your day been going
+- how about you?
+- how is your day being
+- how is your day going on
+- how your day is going
+- what was your day like
+- what about your day
+- how's your day
+- how are you doing this morning
+- how do you do?
+- how are you
+- how are you
+
+## intent:inform_apply
+- what about [design](role:UI/UX Design) job
+- uh how about [Product Marketing](sub_role) type job
+- um [7](experience_years)
+- um [9](experience_years)
+- um [1](experience_years) years
+- um [2](experience_years) years
+- [nine](experience_years:9) years
+- about [3](experience_years) years
+- [0](experience_years) i think
+- [4](experience_years) years
+- [6](experience_years) years
+- [islem@outlook.com](email)
+- [islem7505@gmail.c](email:islem7505@gmail.com)om
+- [hendakriaa@gmail.](email:hendakriaa@gmail.com)com
+- [montassar@yahoo.f](email:montassar@yahoo.fr)r
+- [salah@yahoo.com](email)
+- [mohamedX@outlook.](email:mohamedX@outlook.com)com
+- [islem@gmail.com](email)
+- [islem@yahoo.com](email)
+- [https://www.linkedin.com/in/islem-mezghani-1a4369144/](cv_link)
+- [https://www.linkedin.com/in/](cv_link:https://www.linkedin.com/in/4554521hjhj)4554521hjhj
+- [74562369](phone_number)
+- [92365878](phone_number)
+- [96258741](phone_number)
+- [24563789](phone_number)
+- [23842128](phone_number)
+- [27896365](phone_number)
+- call me on [41278112](phone_number)
+- [Islem Mezghani](name)
+- [Mohsen X](name)
+- [Mohamed Karim](name)
+- [Amira Jallouli](name)
+- [Henda Kriaa](name)
+- [job-93233](jobRef)
+- [job-03236](jobRef)
+- [job-59896](jobRef)
+- [job-54212](jobRef)
+- [job-78454](jobRef)
+- [job-41212](jobRef)
+- [job-32321](jobRef)
+- [job-54212](jobRef)
+- [job-12345](jobRef)
+- [Mohamed Karim](name)
+- [5](experience_years)
+- [2](experience_years)
+- [8](experience_years) years
+- [10](experience_years) years
+- [16](experience_years) years
+- [20](experience_years) years
+- [50730571](phone_number)
+- [islem@email.com](email)
+- [https://www.linkedin.com/in/islem-mezghani-1a4369144/](cv_link)
+
+## intent:inform_contact
+- how can i call you
+- what is your [email](contact)
+- what is your [phone ](contact)number
+
+## intent:inform_industies
+- what is your type of work
+- tell me about you solution
+
+## intent:inform_internship
+- [Ref-54125](internshipRef)
+- [Ref-02146](internshipRef)
+- [Ref-87732](internshipRef)
+- [Ref-98523](internshipRef)
+- i'm looking for internship opportunity at your firm
+- what are the available project for internship
+
+## intent:inform_job
+- I'm looking for a job
+- I'm interested in[Software Development](role)
+- what do have of [Digital Marketing](sub_role) food
+- id like a job
+- im looking for a job in [Product Marketing](sub_role)
+- can you employ me
+- i'm searching for a job
+- I want to work as a [UI/UX Design](role)
+- I specialize in [Front-End Development](sub_role)
+- I prefer in [UI](sub_role)
+- I want to work as a [UX](sub_role)
+- I want to work as a [Back-End Development](sub_role)
+- I'm looking for a job
+- I'm looking for a new job
+- any jobs offers
+- i want to work for you
+- what are the jobs in your firm
+- i want a job
+- [Software Development](role)
+- [Software Development](role) role
+- how bout [Digital Marketing](sub_role)
+- what about [UI/UX Design](role) job
+- what about [design](role:UI/UX Design) job
+- uh how about [Product Marketing](sub_role) type job
+- [Security Specialist](sub_role)
+- [Network Specialist](sub_role)
+- [Marketin](role:Marketing)g
+- uhm [Marketin](role:Marketing)g i think
+- [network & security](role)
+- [Network and Security](role)
+- [UI](sub_role)
+- [UX](sub_role)
+- [UI/UX](sub_role)
+- [Fullstack](sub_role)
+- [Front-End Development](sub_role)
+- [Back-End Development](sub_role)
+- can you employ me 
+- i'm searching for a job 
+- I'm looking for a job
+- I'm looking for a new job
+- any jobs offers
+- i wanna work for you
+- i want to work for you
+- what are the jobs in your firm
+- what are the available positions at your firm
+- any jobs offeres available 
+- I'm graduated and searching for a job
+- i 'm looking for a new opportunity at your firm
+- [Network and Security](role)
+- [Network Speciality](sub_role)
+
+## intent:nice_to_meet_you
+- nice to meet you
+- it was nice meeting you
+
+## intent:stop
+- ok then you cant help me
+- that was shit, you're not helping
+- you can't help me
+- you can't help me with what i need
+- i guess you can't help me then
+- ok i guess you can't help me
+- that's not what i want
+- ok, but that doesnt help me
+- this is leading to nothing
+- this conversation is not really helpful
+- you cannot help me with what I want
+- I think you cant help me
+- hm i don't think you can do what i want
+- stop
+- stop go back
+- do you get anything?
+- and you call yourself bot company? pff
+- and that's it?
+- nothing else?
+
+## synonym:9
+- nine
+
+## synonym:Back-End Development
+- back end development
+- back-end
+- back end
+- backend development
+
+## synonym:Front-End Development
+- front end development
+- front-end
+- font end
+- Front End
+
+## synonym:Marketing
+- marketing
+- markeing
+
+## synonym:Network and Security
+- network & security
+
+## synonym:UI/UX Design
+- design
+
+## regex:cv_link
+- [https://]*[www.]*linkedin.[com | org | tn | fr | me]+[\/in\/]*[a-z A-z 0-9 -]+
+
+## regex:email
+- [a-z A-Z]+[0-9 a-z A-Z]*@[a-z A-Z]+[.][a-z A-Z]+
+
+## regex:experience_years
+- [0-9][0-9]?
+
+## regex:internshipRef
+- Ref-[0-9]{5}
+
+## regex:jobRef
+- job-[0-9]{5}
+
+## regex:phone_number
+- [0-9]{8}

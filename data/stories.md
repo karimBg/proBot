@@ -118,3 +118,19 @@
 ##details story
 * ask_detail
     - action_show_details
+
+## Generated Story 5850874494677902334
+* inform_job
+    - utter_ask_role
+* inform_job{"role": "Network and Security"}
+    - slot{"role": "Network and Security"}
+    - action_sub_role
+* inform_job{"sub_role": "Network Speciality"}
+    - slot{"sub_role": "Network Speciality"}
+    - action_job
+    - slot{"jobRef": "job-12128"}
+
+## Generated Story 4342554994561008248
+* inform_contact
+    - action_contact
+

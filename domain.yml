@@ -1,73 +1,73 @@
 %YAML 1.1
 ---
 actions:
+- utter_ask_Design_role
+- utter_apply_submit
+- utter_ask_experience_years
 - utter_ask_continue
+- utter_ask_detail
+- utter_wrong_experience_years
+- utter_ask_cv_link
+- action_show_details
+- utter_ask_contact
+- action_acquaintance
+- utter_how_are_you
 - utter_noworries
 - action_job
-- action_sub_role
-- utter_ask_experience_years
-- action_show_details
-- action_internship
-- action_acquaintance
-- utter_apply_submit
-- utter_ask_Design_role
-- utter_nice_to_meet_you
-- utter_ask_apply
-- action_location
-- utter_ask_contact
+- utter_ask_phone_number
+- utter_ask_Development_role
+- utter_apply_slots_values
+- utter_greet
 - utter_ask_name
+- utter_slots_values
+- action_internship
+- utter_detail
+- action_store_applicant
+- utter_wrong_role
+- action_contact
+- utter_nice_to_meet_you
+- utter_ask_jobRef
+- action_sub_role
 - utter_location
 - utter_ask_role
-- utter_wrong_email
-- utter_default
-- utter_wrong_role
-- utter_chitchat
-- utter_ask_jobRef
-- utter_greet
-- utter_ask_phone_number
-- utter_goodbye
-- action_contact
-- utter_ask_cv_link
-- utter_slots_values
-- utter_ask_Development_role
-- utter_ask_detail
-- utter_apply_slots_values
 - utter_ask_email
-- utter_wrong_experience_years
-- utter_detail
-- utter_how_are_you
-- action_store_applicant
+- action_location
+- utter_default
+- utter_goodbye
+- utter_chitchat
+- utter_wrong_email
+- utter_ask_apply
 entities:
 - jobRef
-- job_title
-- internshipRef
-- JobOptions
-- cv_link
-- email
-- degree
-- experience_years
 - phone_number
 - name
 - sub_role
+- degree
+- job_title
+- internshipRef
+- cv_link
+- JobOptions
 - role
 - contact
+- experience_years
+- email
 forms:
+- apply_form
 - jobs_form
 - internship_form
-- apply_form
 intents:
+- inform_contact
+- inform_job
 - affirm
 - apply_job:
     use_entities: false
 - inform_apply
-- inform_job
 - inform_internship
 - ask_detail
 - greet
 - how_are_you
 - nice_to_meet_you
 - goodbye
-- inform_contact
 - inform_location
 - acquaintance
 - deny
@@ -104,6 +104,16 @@ slots:
   sub_role:
     type: text
 templates:
+  utter_acquaintance:
+  - text: I'm a virtual agent
+  - text: Think of me as a virtual agent.
+  - text: Well, I'm not a person, I'm a virtual agent.
+  - text: I'm a virtual being, not a real person.
+  - text: I'm a conversational app.
+  utter_age:
+  - text: I prefer not to answer with a number. I know I'm young.
+  - text: I was created recently, but don't know my exact age.
+  - text: Age is just a number. You're only as old as you feel.
   utter_apply_slots_values:
   - text: "I collected information about applicants using those parameters\n - jobRef:\
       \ {jobRef}\n - name: {name}\n - phone_number: {phone_number}\n - email: {email}\n\
@@ -134,7 +144,16 @@ templates:
   utter_ask_cv_link:
   - text: ' send us a link with your resume or Linkedin Account'
   utter_ask_detail:
-  - text: Would you Like to learn more about this offer ?
+  - buttons:
+    - payload: Description
+      title: Description
+    - payload: Responsibilities
+      title: Responsibilities
+    - payload: Qualification
+      title: Qualification
+    - payload: ApplicationProcedure
+      title: Application procedure
+    text: Would you Like to learn more about this offer ?
   utter_ask_email:
   - text: And, your email?
   utter_ask_experience_years:
@@ -156,6 +175,8 @@ templates:
     - payload: Network and Security
       title: Network & Security
     text: What kind of role are you interested in?
+  utter_creator:
+  - text: Islem Developed me and Karim Designed me
   utter_default:
   - text: sorry, I didn't understand you, please try input something else
   utter_detail:
@@ -182,11 +203,13 @@ templates:
   - text: Likewise. I'm looking forward to helping you out.
   - text: Nice meeting you, as well.
   - text: The pleasure is mine.
+  utter_not_available:
+  - text: sorry but no information are available about that at the moment
   utter_slots_values:
   - text: "what is kind of job you are looking for:\n - job_title: {job_title}\n"
+  utter_wrong_cv_link:
+  - text: enter a valide linkedin link
   utter_wrong_email:
   - text: Please give a valid email. e.g.. islem@gmail.com
   utter_wrong_experience_years:
   - text: experience years should be a positive integer, please try again
-  utter_wrong_cv_link:
-  - text: enter a valide linkedin link

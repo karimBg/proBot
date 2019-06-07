@@ -21,12 +21,45 @@
 - who the hell are you?
 - what can you do for me?
 
+## intent:affirm
+- yeah
+- correct
+- ye
+- uh yes
+- let's do it
+- yeah
+- uh yes
+- um yes
+- yes
+- that's correct
+- yes yes
+- right
+- yea
+- yes
+- yes right
+- yes and i dont care
+- right on
+- i love that
+
+## intent:apply_job
+- I want to apply
+- how do i apply
+- i want to apply for that position
+
 ## intent:ask_detail
 - [description](JobOptions)
 - [mission](JobOptions)
 - [date](JobOptions)
-- [description](JobOptions)
-- [mission](JobOptions)
+
+## intent:deny
+- no
+- no new selection
+- no thanks
+- no thank you
+- uh no
+- breath no
+- do you have something else
+- no this does not work for me
 
 ## intent:goodbye
 - goodbye
@@ -107,48 +140,210 @@
 - how are you
 - how are you
 
+## intent:inform_apply
+- what about [design](role:UI/UX Design) job
+- uh how about [Product Marketing](sub_role) type job
+- um [7](experience_years)
+- um [9](experience_years)
+- um [1](experience_years) years
+- um [2](experience_years) years
+- [nine](experience_years:9) years
+- about [3](experience_years) years
+- [0](experience_years) i think
+- [4](experience_years) years
+- [6](experience_years) years
+- [islem@outlook.com](email)
+- [islem7505@gmail.c](email:islem7505@gmail.com)om
+- [hendakriaa@gmail.](email:hendakriaa@gmail.com)com
+- [montassar@yahoo.f](email:montassar@yahoo.fr)r
+- [salah@yahoo.com](email)
+- [mohamedX@outlook.](email:mohamedX@outlook.com)com
+- [islem@gmail.com](email)
+- [islem@yahoo.com](email)
+- [https://www.linkedin.com/in/islem-mezghani-1a4369144/](cv_link)
+- [https://www.linkedin.com/in/](cv_link:https://www.linkedin.com/in/4554521hjhj)4554521hjhj
+- [74562369](phone_number)
+- [92365878](phone_number)
+- [96258741](phone_number)
+- [24563789](phone_number)
+- [23842128](phone_number)
+- [27896365](phone_number)
+- call me on [41278112](phone_number)
+- [Islem Mezghani](name)
+- [Mohsen X](name)
+- [Mohamed Karim](name)
+- [Amira Jallouli](name)
+- [Henda Kriaa](name)
+- [job-93233](jobRef)
+- [job-03236](jobRef)
+- [job-59896](jobRef)
+- [job-54212](jobRef)
+- [job-78454](jobRef)
+- [job-41212](jobRef)
+- [job-32321](jobRef)
+- [job-54212](jobRef)
+- [job-12345](jobRef)
+- [Mohamed Karim](name)
+- [5](experience_years)
+- [2](experience_years)
+- [8](experience_years) years
+- [10](experience_years) years
+- [16](experience_years) years
+- [20](experience_years) years
+- [50730571](phone_number)
+- [islem@email.com](email)
+- [https://www.linkedin.com/in/islem-mezghani-1a4369144/](cv_link)
+
 ## intent:inform_contact
 - how can i call you
 - what is your [email](contact)
 - what is your [phone ](contact)number
+- i need your contact
 
 ## intent:inform_industies
 - what is your type of work
 - tell me about you solution
 
 ## intent:inform_internship
+- [Ref-54125](internshipRef)
+- [Ref-02146](internshipRef)
+- [Ref-87732](internshipRef)
+- [Ref-98523](internshipRef)
 - i'm looking for internship opportunity at your firm
 - what are the available project for internship
 
 ## intent:inform_job
-- I'm looking for a job as a [designer](job_title)
-- I'm looking for a job as a [Developer](job_title)
+- I'm looking for a job
+- I'm interested in[Software Development](role)
+- what do have of [Digital Marketing](sub_role) food
+- id like a job
+- im looking for a job in [Product Marketing](sub_role)
 - can you employ me
 - i'm searching for a job
-- I want to work as a [Designer](job_title)
+- I want to work as a [UI/UX Design](role)
+- I specialize in [Front-End Development](sub_role)
+- I prefer in [UI](sub_role)
+- I want to work as a [UX](sub_role)
+- I want to work as a [Back-End Development](sub_role)
+- I'm looking for a job
+- I'm looking for a new job
+- any jobs offers
+- i want to work for you
+- what are the jobs in your firm
+- i want a job
+- [Software Development](role)
+- [Software Development](role) role
+- how bout [Digital Marketing](sub_role)
+- what about [UI/UX Design](role) job
+- what about [design](role:UI/UX Design) job
+- uh how about [Product Marketing](sub_role) type job
+- [Security Specialist](sub_role)
+- [Network Specialist](sub_role)
+- [Marketin](role:Marketing)g
+- uhm [Marketin](role:Marketing)g i think
+- [network & security](role)
+- [Network and Security](role)
+- [UI](sub_role)
+- [UX](sub_role)
+- [UI/UX](sub_role)
+- [Fullstack](sub_role)
+- [Front-End Development](sub_role)
+- [Back-End Development](sub_role)
+- can you employ me
+- i'm searching for a job
 - I'm looking for a job
 - I'm looking for a new job
 - any jobs offers
 - i wanna work for you
 - i want to work for you
 - what are the jobs in your firm
-- any [mobile developer](job_title) positions
 - what are the available positions at your firm
-- I'm looking for job in [IT](department)
-- i'm looking for a job in [Accounting](department)
 - any jobs offeres available
 - I'm graduated and searching for a job
-- [mobile developper](job_title)
-- [designer](job_title)
-- [web developer](job_title)
-- [software developer](job_title)
-- [web integrator](job_title)
-- [web designer](job_title)
-- i want a job
-- [web designer](job_title)
-- i want a job
-- [web developer](job_title)
+- i 'm looking for a new opportunity at your firm
+- [Network and Security](role)
+- [Network Speciality](sub_role)
 
 ## intent:nice_to_meet_you
 - nice to meet you
 - it was nice meeting you
+
+## intent:stop
+- ok then you cant help me
+- that was shit, you're not helping
+- you can't help me
+- you can't help me with what i need
+- i guess you can't help me then
+- ok i guess you can't help me
+- that's not what i want
+- ok, but that doesnt help me
+- this is leading to nothing
+- this conversation is not really helpful
+- you cannot help me with what I want
+- I think you cant help me
+- hm i don't think you can do what i want
+- stop
+- stop go back
+- do you get anything?
+- and you call yourself bot company? pff
+- and that's it?
+- nothing else?
+
+## synonym:9
+- nine
+
+## synonym:Back-End Development
+- back end development
+- back-end
+- back end
+- backend development
+
+## synonym:Front-End Development
+- front end development
+- front-end
+- font end
+- Front End
+
+## synonym:Marketing
+- Marketin
+- marketing
+- markeing
+
+## synonym:Network and Security
+- network & security
+
+## synonym:UI/UX Design
+- design
+
+## synonym:hendakriaa@gmail.com
+- hendakriaa@gmail.
+
+## synonym:https://www.linkedin.com/in/4554521hjhj
+- https://www.linkedin.com/in/
+
+## synonym:islem7505@gmail.com
+- islem7505@gmail.c
+
+## synonym:mohamedX@outlook.com
+- mohamedX@outlook.
+
+## synonym:montassar@yahoo.fr
+- montassar@yahoo.f
+
+## regex:cv_link
+- [https://]*[www.]*linkedin.[com | org | tn | fr | me]+[\/in\/]*[a-z A-z 0-9 -]+
+
+## regex:email
+- [a-z A-Z]+[0-9 a-z A-Z]*@[a-z A-Z]+[.][a-z A-Z]+
+
+## regex:experience_years
+- [0-9][0-9]?
+
+## regex:internshipRef
+- Ref-[0-9]{5}
+
+## regex:jobRef
+- job-[0-9]{5}
+
+## regex:phone_number
+- [0-9]{8}

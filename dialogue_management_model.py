@@ -13,6 +13,7 @@ from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
 from rasa_core.run import serve_application
 from rasa_core import config
+from rasa_core.policies.fallback import FallbackPolicy
 
 logger = logging.getLogger(__name__)
 
@@ -20,21 +21,21 @@ logger = logging.getLogger(__name__)
 def train_dialogue(
     domain_file="domain.yml",
     model_path="./models/dialogue",
-    training_data_file="./data/stories.md",
-):
-
+    training_data_file="./data/stories.md"):
+    fallback = FallbackPolicy(fallback_action_name="action_default_fallback",
+                            core_threshold=0.6,
+                            nlu_threshold=0.6)
     agent = Agent(
         domain_file,
         policies=[
             FormPolicy(),
             MemoizationPolicy(),
             KerasPolicy(max_history=3, epochs=500, batch_size=50),
+            fallback
         ],
     )
     data = agent.load_data(training_data_file)
-
     agent.train(data)
-
     agent.persist(model_path)
     return agent
 
