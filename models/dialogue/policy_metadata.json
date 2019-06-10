@@ -1,15 +1,15 @@
 {
   "action_fingerprints": {
-    "utter_greet": {
-      "slots": []
-    },
     "action_listen": {
       "slots": [
-        "sub_role",
-        "jobRef",
         "internshipRef",
-        "role"
+        "role",
+        "sub_role",
+        "jobRef"
       ]
+    },
+    "utter_how_are_you": {
+      "slots": []
     },
     "internship_form": {
       "slots": [
@@ -21,10 +21,13 @@
         "requested_slot"
       ]
     },
-    "action_acquaintance": {
+    "utter_what_can_you_do": {
       "slots": []
     },
     "utter_nice_to_meet_you": {
+      "slots": []
+    },
+    "utter_creator": {
       "slots": []
     },
     "action_job": {
@@ -32,30 +35,33 @@
         "jobRef"
       ]
     },
-    "utter_how_are_you": {
+    "utter_greet": {
+      "slots": []
+    },
+    "action_acquaintance": {
       "slots": []
     },
     "utter_goodbye": {
+      "slots": []
+    },
+    "apply_form": {
+      "slots": [
+        "requested_slot",
+        "cv_link",
+        "name",
+        "phone_number",
+        "experience_years",
+        "email",
+        "jobRef"
+      ]
+    },
+    "utter_apply_slots_values": {
       "slots": []
     },
     "action_show_details": {
       "slots": []
     },
     "action_contact": {
-      "slots": []
-    },
-    "apply_form": {
-      "slots": [
-        "experience_years",
-        "jobRef",
-        "phone_number",
-        "email",
-        "requested_slot",
-        "cv_link",
-        "name"
-      ]
-    },
-    "utter_apply_slots_values": {
       "slots": []
     }
   },
@@ -73,7 +79,7 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20190606-225058",
+  "trained_at": "20190610-231329",
   "rasa_core": "0.13.3",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.3"

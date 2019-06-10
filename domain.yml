@@ -1,6 +1,8 @@
 %YAML 1.1
 ---
 actions:
+- utter_what_can_you_do
+- utter_creator
 - utter_ask_Design_role
 - utter_apply_submit
 - utter_ask_experience_years
@@ -213,3 +215,8 @@ templates:
   - text: Please give a valid email. e.g.. islem@gmail.com
   utter_wrong_experience_years:
   - text: experience years should be a positive integer, please try again
+  utter_what_can_you_do: 
+  - text: I'm pretty much you assistant to guide through jobs/internship offers, also you can ask me about our firm anything
+  - text: i can help you to find a job and apply at our firm 
+  - text: my mission here is for you to join our team, or i can just save you time and asl me about location or email
+  - text: i don't really know about the outside world, but i know about this firm 

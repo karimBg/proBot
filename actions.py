@@ -126,7 +126,7 @@ class Actioncontact(Action):
         #get contact of user_id 
         email = getEmail(user_id)
         phone_number = getPhone(user_id)
-        dispatcher.utter_message("call or email us on"+phone_numbee+"or" +email )
+        dispatcher.utter_message("call or email us on"+phone_number+"or" +email )
         return []
 
 # Job Option Action
@@ -136,7 +136,7 @@ class actionShowDetails(Action):
     def run(self, dispatcher, tracker, domain):
         jobRef = tracker.get_slot("jobRef")
         job_option = tracker.get_slot("JobOptions")
-        #user_id = (tracker.current_state())["sender_id"]
+        user_id = (tracker.current_state())["sender_id"]
         #getting data from DB
         job_data = get_job_data(job_option, jobRef, user_id)
 

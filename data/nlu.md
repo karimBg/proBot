@@ -19,7 +19,6 @@
 - all about you
 - what are you upto?
 - who the hell are you?
-- what can you do for me?
 
 ## intent:affirm
 - yeah
@@ -148,21 +147,25 @@
 - um [1](experience_years) years
 - um [2](experience_years) years
 - [nine](experience_years:9) years
+- [three](experience_years:3) years
+- [two](experience_years:2) years
+- [one](experience_years:1) years
 - about [3](experience_years) years
 - [0](experience_years) i think
 - [4](experience_years) years
 - [6](experience_years) years
 - [islem@outlook.com](email)
-- [islem7505@gmail.c](email:islem7505@gmail.com)om
-- [hendakriaa@gmail.](email:hendakriaa@gmail.com)com
-- [montassar@yahoo.f](email:montassar@yahoo.fr)r
+- [islem7505@gmail.com](email:islem7505@gmail.com)om
+- [hendakriaa@gmail.com](email:hendakriaa@gmail.com)com
+- [montassar@yahoo.fr](email:montassar@yahoo.fr)
 - [salah@yahoo.com](email)
 - [mohamedX@outlook.](email:mohamedX@outlook.com)com
 - [islem@gmail.com](email)
 - [islem@yahoo.com](email)
 - [https://www.linkedin.com/in/islem-mezghani-1a4369144/](cv_link)
-- [https://www.linkedin.com/in/](cv_link:https://www.linkedin.com/in/4554521hjhj)4554521hjhj
+- [https://www.linkedin.com/in/Mohamed-karim-djs544121/](cv_link)
 - [74562369](phone_number)
+- [https://www.linkedin.com/in/mohsen-salah-2211d1s22/](cv_link
 - [92365878](phone_number)
 - [96258741](phone_number)
 - [24563789](phone_number)
@@ -200,6 +203,13 @@
 - what is your [phone ](contact)number
 - i need your contact
 
+## intent:inform_Location
+- what is your Address
+- how can i get to you 
+- what is your Location
+- where are you currently positioned
+
+
 ## intent:inform_industies
 - what is your type of work
 - tell me about you solution
@@ -211,6 +221,15 @@
 - [Ref-98523](internshipRef)
 - i'm looking for internship opportunity at your firm
 - what are the available project for internship
+- i'm a student and looking for an internship
+
+## intent:inform_degree
+- actually i have  a [master](degree) in mobile developement
+- i just will get my [Engineering](degree) diploma soon
+- i'm [Technician](degree)
+- [Master](degree) 
+- [Engineering](degree)
+- just [Technician](degree)  
 
 ## intent:inform_job
 - I'm looking for a job
@@ -268,6 +287,24 @@
 - nice to meet you
 - it was nice meeting you
 
+## intent:inform_creator
+- who is your father 
+- who created you 
+- who developed you
+- who is your boss
+- who designed you 
+
+## intent:what_can_you_do
+- help
+- what can you do 
+- what can you help me with 
+- what is your mission
+- what is your purpose
+- what can you do for me
+- how can you help me 
+- what can you help me with 
+ 
+
 ## intent:stop
 - ok then you cant help me
 - that was shit, you're not helping
@@ -291,6 +328,12 @@
 
 ## synonym:9
 - nine
+
+## synonym:1 
+- one
+
+## synonym:2
+- two
 
 ## synonym:Back-End Development
 - back end development

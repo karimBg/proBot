@@ -134,3 +134,10 @@
 * inform_contact
     - action_contact
 
+## story 427450
+* what_can_you_do
+    - utter_what_can_you_do
+
+## story 4521121
+* inform_creator
+    - utter_creator

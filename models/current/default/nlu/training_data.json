@@ -82,10 +82,6 @@
         "text": "who the hell are you?"
       },
       {
-        "intent": "acquaintance",
-        "text": "what can you do for me?"
-      },
-      {
         "intent": "affirm",
         "text": "yeah"
       },
@@ -617,6 +613,42 @@
         "intent": "inform_apply",
         "entities": [
           {
+            "start": 0,
+            "end": 5,
+            "value": "3",
+            "entity": "experience_years"
+          }
+        ],
+        "text": "three years"
+      },
+      {
+        "intent": "inform_apply",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "2",
+            "entity": "experience_years"
+          }
+        ],
+        "text": "two years"
+      },
+      {
+        "intent": "inform_apply",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "1",
+            "entity": "experience_years"
+          }
+        ],
+        "text": "one years"
+      },
+      {
+        "intent": "inform_apply",
+        "entities": [
+          {
             "start": 6,
             "end": 7,
             "value": "3",
@@ -678,31 +710,31 @@
         "entities": [
           {
             "start": 0,
-            "end": 17,
+            "end": 19,
             "value": "islem7505@gmail.com",
             "entity": "email"
           }
         ],
-        "text": "islem7505@gmail.com"
+        "text": "islem7505@gmail.comom"
       },
       {
         "intent": "inform_apply",
         "entities": [
           {
             "start": 0,
-            "end": 17,
+            "end": 20,
             "value": "hendakriaa@gmail.com",
             "entity": "email"
           }
         ],
-        "text": "hendakriaa@gmail.com"
+        "text": "hendakriaa@gmail.comcom"
       },
       {
         "intent": "inform_apply",
         "entities": [
           {
             "start": 0,
-            "end": 17,
+            "end": 18,
             "value": "montassar@yahoo.fr",
             "entity": "email"
           }
@@ -774,12 +806,12 @@
         "entities": [
           {
             "start": 0,
-            "end": 28,
-            "value": "https://www.linkedin.com/in/4554521hjhj",
+            "end": 52,
+            "value": "https://www.linkedin.com/in/Mohamed-karim-djs544121/",
             "entity": "cv_link"
           }
         ],
-        "text": "https://www.linkedin.com/in/4554521hjhj"
+        "text": "https://www.linkedin.com/in/Mohamed-karim-djs544121/"
       },
       {
         "intent": "inform_apply",
@@ -792,6 +824,10 @@
           }
         ],
         "text": "74562369"
+      },
+      {
+        "intent": "inform_apply",
+        "text": "[https://www.linkedin.com/in/mohsen-salah-2211d1s22/](cv_link"
       },
       {
         "intent": "inform_apply",
@@ -1182,6 +1218,26 @@
         "text": "what is your phone number"
       },
       {
+        "intent": "inform_contact",
+        "text": "i need your contact"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "what is your Address"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "how can i get to you"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "what is your Location"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "where are you currently positioned"
+      },
+      {
         "intent": "inform_industies",
         "text": "what is your type of work"
       },
@@ -1244,6 +1300,82 @@
       {
         "intent": "inform_internship",
         "text": "what are the available project for internship"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "i'm a student and looking for an internship"
+      },
+      {
+        "intent": "inform_degree",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "master",
+            "entity": "degree"
+          }
+        ],
+        "text": "actually i have  a master in mobile developement"
+      },
+      {
+        "intent": "inform_degree",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "Engineering",
+            "entity": "degree"
+          }
+        ],
+        "text": "i just will get my Engineering diploma soon"
+      },
+      {
+        "intent": "inform_degree",
+        "entities": [
+          {
+            "start": 4,
+            "end": 14,
+            "value": "Technician",
+            "entity": "degree"
+          }
+        ],
+        "text": "i'm Technician"
+      },
+      {
+        "intent": "inform_degree",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Master",
+            "entity": "degree"
+          }
+        ],
+        "text": "Master"
+      },
+      {
+        "intent": "inform_degree",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Engineering",
+            "entity": "degree"
+          }
+        ],
+        "text": "Engineering"
+      },
+      {
+        "intent": "inform_degree",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "Technician",
+            "entity": "degree"
+          }
+        ],
+        "text": "just Technician"
       },
       {
         "intent": "inform_job",
@@ -1678,6 +1810,58 @@
         "text": "it was nice meeting you"
       },
       {
+        "intent": "inform_creator",
+        "text": "who is your father"
+      },
+      {
+        "intent": "inform_creator",
+        "text": "who created you"
+      },
+      {
+        "intent": "inform_creator",
+        "text": "who developed you"
+      },
+      {
+        "intent": "inform_creator",
+        "text": "who is your boss"
+      },
+      {
+        "intent": "inform_creator",
+        "text": "who designed you"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "help"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you do"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you help me with"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what is your mission"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what is your purpose"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you do for me"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "how can you help me"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you help me with"
+      },
+      {
         "intent": "stop",
         "text": "ok then you cant help me"
       },
@@ -1795,33 +1979,27 @@
         ]
       },
       {
-        "value": "islem7505@gmail.com",
+        "value": "3",
         "synonyms": [
-          "islem7505@gmail.c"
+          "three"
         ]
       },
       {
-        "value": "hendakriaa@gmail.com",
+        "value": "2",
         "synonyms": [
-          "hendakriaa@gmail."
+          "two"
         ]
       },
       {
-        "value": "montassar@yahoo.fr",
+        "value": "1",
         "synonyms": [
-          "montassar@yahoo.f"
+          "one"
         ]
       },
       {
         "value": "mohamedX@outlook.com",
         "synonyms": [
           "mohamedX@outlook."
-        ]
-      },
-      {
-        "value": "https://www.linkedin.com/in/4554521hjhj",
-        "synonyms": [
-          "https://www.linkedin.com/in/"
         ]
       },
       {
@@ -1854,6 +2032,30 @@
         "value": "Network and Security",
         "synonyms": [
           "network & security"
+        ]
+      },
+      {
+        "value": "hendakriaa@gmail.com",
+        "synonyms": [
+          "hendakriaa@gmail."
+        ]
+      },
+      {
+        "value": "https://www.linkedin.com/in/4554521hjhj",
+        "synonyms": [
+          "https://www.linkedin.com/in/"
+        ]
+      },
+      {
+        "value": "islem7505@gmail.com",
+        "synonyms": [
+          "islem7505@gmail.c"
+        ]
+      },
+      {
+        "value": "montassar@yahoo.fr",
+        "synonyms": [
+          "montassar@yahoo.f"
         ]
       }
     ]

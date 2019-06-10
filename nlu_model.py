@@ -17,6 +17,6 @@ def run_nlu():
 
 
 if __name__ == "__main__":
-    train_nlu("./data/nlu.json", "nlu_config.yml", "./models/current")
+    train_nlu("./data/nlu.md", "nlu_config.yml", "./models/current")
     run_nlu()
 
