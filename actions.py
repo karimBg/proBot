@@ -151,10 +151,7 @@ class actionAcquaintance(Action):
         user_id = (tracker.current_state())["sender_id"]
         #data from data base here 
         intro = getIntroduction(user_id)
-        if not intro:
-            dispatcher.utter_template("utter_acquaintance")
-        else:
-            dispatcher.utter_message(intro)
+        dispatcher.utter_message(intro)
         return []
         
 class actionLocation(Action):
@@ -164,10 +161,7 @@ class actionLocation(Action):
         user_id = (tracker.current_state())["sender_id"]
         #data from data base here 
         loc = getLocation(user_id)
-        if not loc:
-            dispatcher.utter_template("utter_not_available")
-        else:
-            dispatcher.utter_message(loc)
+        dispatcher.utter_message(loc)
         return []
 
 class ApplyForm(FormAction):

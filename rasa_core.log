@@ -20972,3 +20972,117 @@ Rasa process starting
 Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
 b'hello'
 b'whi is your father'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hi'
+b"i'm looking for a job"
+b'Network '
+b'design'
+b'no'
+b'description'
+Failed to run custom action 'action_show_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_show_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b'Description'
+Failed to run custom action 'action_show_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_show_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b'internships'
+b'jobs'
+b'Software Development'
+b'Fullstack'
+b'thank you'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+b'hey'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+b'hey'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+b'hello'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+b'i want a job'
+b'Software Development'
+b'Front-End Development'
+b'okay'
+b'hello'
+b'how are you'
+b"i'm looking for a new job"
+b'UI/UX Design'
+b'UI only'
+b"i'm looking for a job"
+b'Software Development'
+b'Front-End Development'
+b'i want to work for you'
+b'Software Development'
+b'Back-End Development'
+b'job-63679\nnode js developer'
+b'no'
+b'Description'
+b'okay'
+b'bye'
+b'whatever'
+b'i know'
+b"what's your name"
+Failed to run custom action 'action_contact'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_contact'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"what's your name"
+Failed to run custom action 'action_contact'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_contact'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+b'who are you'
+Failed to run custom action 'action_acquaintance'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_acquaintance'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b'who are you'
+Failed to run custom action 'action_acquaintance'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_acquaintance'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b'who are you'
+Failed to run custom action 'action_acquaintance'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_acquaintance'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b'who are you'
+b"what's you name"
+b'whatever'
+b'hello'
+b'who are you'
+b'hello'
+b'who are you'
+b'who are you'
+b'hello'
+b'i want a job'
+b'Software Development'
+b'Back-End Development'
+b'job-63679\nnode js developer'
+b'YES'
+b'Islem Mezghani'
+b'2'
+b'50730571'
+b'islem@email.com'
+b'https://www.linkedin.com/in/stephengrider'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+b'hello'
+b'hello'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+b'hello'
+b'hello'
+b'i want a job'
+b'Software Development'
+b'i want a job'
+b'job-83895\nReact developer'
+b'yes'
+b'Islem Mezghani'
+b'2'
+b'50730571'
+b'islem@email.com'
+b'https://www.linkedin.com/in/islem-mezghani-1a4369144/'
+b'how can i contact you'
+b'i need your contact'

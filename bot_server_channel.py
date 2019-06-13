@@ -20,7 +20,7 @@ logger = logging.getLogger()
 
 class FileMessageStore:
 
-    DEFAULT_FILENAME = "message_store.json"
+    DEFAULT_FILENAME = "proxym.json"
 
     def __init__(self, filename=DEFAULT_FILENAME):
         self._store = defaultdict(list)

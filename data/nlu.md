@@ -19,6 +19,7 @@
 - all about you
 - what are you upto?
 - who the hell are you?
+- who is probot?
 
 ## intent:affirm
 - yeah
@@ -165,7 +166,7 @@
 - [https://www.linkedin.com/in/islem-mezghani-1a4369144/](cv_link)
 - [https://www.linkedin.com/in/Mohamed-karim-djs544121/](cv_link)
 - [74562369](phone_number)
-- [https://www.linkedin.com/in/mohsen-salah-2211d1s22/](cv_link
+- [https://www.linkedin.com/in/mohsen-salah-2211d1s22/](cv_link)
 - [92365878](phone_number)
 - [96258741](phone_number)
 - [24563789](phone_number)
@@ -196,6 +197,10 @@
 - [50730571](phone_number)
 - [islem@email.com](email)
 - [https://www.linkedin.com/in/islem-mezghani-1a4369144/](cv_link)
+- [bhiri@gmail.com](email)
+- [sami_bhiri@email.com](email)
+- [souheylmallat@gmail.com](email)
+- [sabriseltene@dot_it.com](email)
 
 ## intent:inform_contact
 - how can i call you
@@ -213,6 +218,7 @@
 ## intent:inform_industies
 - what is your type of work
 - tell me about you solution
+- what is your domain of work
 
 ## intent:inform_internship
 - [Ref-54125](internshipRef)
@@ -222,6 +228,8 @@
 - i'm looking for internship opportunity at your firm
 - what are the available project for internship
 - i'm a student and looking for an internship
+- I'm looking for an internship
+- internship
 
 ## intent:inform_degree
 - actually i have  a [master](degree) in mobile developement
@@ -229,7 +237,8 @@
 - i'm [Technician](degree)
 - [Master](degree) 
 - [Engineering](degree)
-- just [Technician](degree)  
+- just [Technician](degree)
+- I'm have an [Engineering](degree)
 
 ## intent:inform_job
 - I'm looking for a job

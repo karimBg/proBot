@@ -1,6 +1,26 @@
 [
     {
+        "name": "cv_link",
+        "pattern": "[https://]*[www.]*linkedin.[com | org | tn | fr | me]+[\\/in\\/]*[a-z A-z 0-9 -]+"
+    },
+    {
+        "name": "email",
+        "pattern": "[a-z A-Z]+[0-9 a-z A-Z]*@[a-z A-Z]+[.][a-z A-Z]+"
+    },
+    {
+        "name": "experience_years",
+        "pattern": "[0-9][0-9]?"
+    },
+    {
         "name": "internshipRef",
         "pattern": "Ref-[0-9]{5}"
+    },
+    {
+        "name": "jobRef",
+        "pattern": "job-[0-9]{5}"
+    },
+    {
+        "name": "phone_number",
+        "pattern": "[0-9]{8}"
     }
 ]

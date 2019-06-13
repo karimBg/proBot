@@ -82,6 +82,10 @@
         "text": "who the hell are you?"
       },
       {
+        "intent": "acquaintance",
+        "text": "who is probot?"
+      },
+      {
         "intent": "affirm",
         "text": "yeah"
       },
@@ -827,7 +831,15 @@
       },
       {
         "intent": "inform_apply",
-        "text": "[https://www.linkedin.com/in/mohsen-salah-2211d1s22/](cv_link"
+        "entities": [
+          {
+            "start": 0,
+            "end": 51,
+            "value": "https://www.linkedin.com/in/mohsen-salah-2211d1s22/",
+            "entity": "cv_link"
+          }
+        ],
+        "text": "https://www.linkedin.com/in/mohsen-salah-2211d1s22/"
       },
       {
         "intent": "inform_apply",
@@ -1190,6 +1202,54 @@
         "text": "https://www.linkedin.com/in/islem-mezghani-1a4369144/"
       },
       {
+        "intent": "inform_apply",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "bhiri@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "bhiri@gmail.com"
+      },
+      {
+        "intent": "inform_apply",
+        "entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "value": "sami_bhiri@email.com",
+            "entity": "email"
+          }
+        ],
+        "text": "sami_bhiri@email.com"
+      },
+      {
+        "intent": "inform_apply",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "souheylmallat@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "souheylmallat@gmail.com"
+      },
+      {
+        "intent": "inform_apply",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "sabriseltene@dot_it.com",
+            "entity": "email"
+          }
+        ],
+        "text": "sabriseltene@dot_it.com"
+      },
+      {
         "intent": "inform_contact",
         "text": "how can i call you"
       },
@@ -1244,6 +1304,10 @@
       {
         "intent": "inform_industies",
         "text": "tell me about you solution"
+      },
+      {
+        "intent": "inform_industies",
+        "text": "what is your domain of work"
       },
       {
         "intent": "inform_internship",
@@ -1304,6 +1368,14 @@
       {
         "intent": "inform_internship",
         "text": "i'm a student and looking for an internship"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "I'm looking for an internship"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "internship"
       },
       {
         "intent": "inform_degree",
@@ -1376,6 +1448,18 @@
           }
         ],
         "text": "just Technician"
+      },
+      {
+        "intent": "inform_degree",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "Engineering",
+            "entity": "degree"
+          }
+        ],
+        "text": "I'm have an Engineering"
       },
       {
         "intent": "inform_job",
