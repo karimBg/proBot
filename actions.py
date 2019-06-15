@@ -92,15 +92,13 @@ class InternshipAction(Action):
     def run(self, dispatcher, tracker, domain):
         user_id = (tracker.current_state())["sender_id"] 
         #user_id = "189c6a81-abde-4388-a757-a50da959e8da"
-
         # get all internship reference and project title ( recommended )
-        possible_internships = list_internships(user_id)
+        degree = tracker.get_slot("degree")
+        possible_internships = list_internships(user_id , degree)
 
         message = "These are the available internship offers that we have right now, use the Internship Reference to learn more about an offer!"
-
         # generates a list of buttons from the list of possible_internships
         buttons = generate_internship_buttons(possible_internships)
-
         dispatcher.utter_button_message(message, buttons)
         return []
         
@@ -156,7 +154,7 @@ class actionAcquaintance(Action):
         
 class actionLocation(Action):
     def name(self):
-        return "action_acquaintance"
+        return "action_location"
     def run(self, dispatcher, tracker, domain):
         user_id = (tracker.current_state())["sender_id"]
         #data from data base here 

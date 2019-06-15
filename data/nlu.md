@@ -140,6 +140,12 @@
 - how are you
 - how are you
 
+## intent:inform_Location
+- what is your Address
+- how can i get to you
+- what is your Location
+- where are you currently positioned
+
 ## intent:inform_apply
 - what about [design](role:UI/UX Design) job
 - uh how about [Product Marketing](sub_role) type job
@@ -156,9 +162,9 @@
 - [4](experience_years) years
 - [6](experience_years) years
 - [islem@outlook.com](email)
-- [islem7505@gmail.com](email:islem7505@gmail.com)om
-- [hendakriaa@gmail.com](email:hendakriaa@gmail.com)com
-- [montassar@yahoo.fr](email:montassar@yahoo.fr)
+- [islem7505@gmail.com](email)om
+- [hendakriaa@gmail.com](email)com
+- [montassar@yahoo.fr](email)
 - [salah@yahoo.com](email)
 - [mohamedX@outlook.](email:mohamedX@outlook.com)com
 - [islem@gmail.com](email)
@@ -208,12 +214,22 @@
 - what is your [phone ](contact)number
 - i need your contact
 
-## intent:inform_Location
-- what is your Address
-- how can i get to you 
-- what is your Location
-- where are you currently positioned
+## intent:inform_creator
+- who is your father
+- who created you
+- who developed you
+- who is your boss
+- who designed you
+- who is your father
 
+## intent:inform_degree
+- actually i have  a [master](degree) in mobile developement
+- i just will get my [Engineering](degree) diploma soon
+- i'm [Technician](degree)
+- [Master](degree)
+- [Engineering](degree)
+- just [Technician](degree)
+- I'm have an [Engineering](degree)
 
 ## intent:inform_industies
 - what is your type of work
@@ -230,15 +246,6 @@
 - i'm a student and looking for an internship
 - I'm looking for an internship
 - internship
-
-## intent:inform_degree
-- actually i have  a [master](degree) in mobile developement
-- i just will get my [Engineering](degree) diploma soon
-- i'm [Technician](degree)
-- [Master](degree) 
-- [Engineering](degree)
-- just [Technician](degree)
-- I'm have an [Engineering](degree)
 
 ## intent:inform_job
 - I'm looking for a job
@@ -296,24 +303,6 @@
 - nice to meet you
 - it was nice meeting you
 
-## intent:inform_creator
-- who is your father 
-- who created you 
-- who developed you
-- who is your boss
-- who designed you 
-
-## intent:what_can_you_do
-- help
-- what can you do 
-- what can you help me with 
-- what is your mission
-- what is your purpose
-- what can you do for me
-- how can you help me 
-- what can you help me with 
- 
-
 ## intent:stop
 - ok then you cant help me
 - that was shit, you're not helping
@@ -335,14 +324,28 @@
 - and that's it?
 - nothing else?
 
-## synonym:9
-- nine
+## intent:what_can_you_do
+- help
+- what can you do
+- what can you help me with
+- what is your mission
+- what is your purpose
+- what can you do for me
+- how can you help me
+- what can you help me with
+- what can you do ?
 
-## synonym:1 
+## synonym:1
 - one
 
 ## synonym:2
 - two
+
+## synonym:3
+- three
+
+## synonym:9
+- nine
 
 ## synonym:Back-End Development
 - back end development
