@@ -1,6 +1,7 @@
 %YAML 1.1
 ---
 actions:
+- internship_details
 - utter_what_can_you_do
 - utter_noworries
 - utter_ask_name
@@ -59,6 +60,7 @@ forms:
 - jobs_form
 - apply_form
 intents:
+- inform_degree
 - what_can_you_do
 - inform_creator
 - inform_contact
@@ -165,7 +167,7 @@ templates:
       title: Responsibilities
     - payload: Qualification
       title: Qualification
-    - payload: ApplicationProcedure
+    - payload: Application Procedure
       title: Application procedure
     text: Would you Like to learn more about this offer ?
   utter_ask_email:

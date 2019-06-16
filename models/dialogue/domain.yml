@@ -1,65 +1,73 @@
 %YAML 1.1
 ---
 actions:
+- internship_details
 - utter_what_can_you_do
-- utter_creator
-- utter_ask_Design_role
-- utter_apply_submit
-- utter_ask_experience_years
-- utter_ask_continue
-- utter_ask_detail
-- utter_wrong_experience_years
-- utter_ask_cv_link
-- action_show_details
-- utter_ask_contact
-- action_acquaintance
-- utter_how_are_you
 - utter_noworries
-- action_job
-- utter_ask_phone_number
-- utter_ask_Development_role
-- utter_apply_slots_values
-- utter_greet
 - utter_ask_name
-- utter_slots_values
-- action_internship
-- utter_detail
-- action_store_applicant
-- utter_wrong_role
-- action_contact
-- utter_nice_to_meet_you
-- utter_ask_jobRef
-- action_sub_role
-- utter_location
-- utter_ask_role
 - utter_ask_email
-- action_location
-- utter_default
-- utter_goodbye
 - utter_chitchat
-- utter_wrong_email
+- utter_apply_submit
+- action_acquaintance
+- action_internship
+- utter_ask_experience_years
+- utter_greet
+- utter_ask_phone_number
+- utter_ask_detail
+- utter_default
+- utter_nice_to_meet_you
+- utter_ask_role
+- utter_ask_Design_role
+- utter_how_are_you
+- action_location
+- utter_detail
 - utter_ask_apply
+- utter_wrong_email
+- utter_wrong_experience_years
+- utter_apply_slots_values
+- utter_ask_continue
+- utter_goodbye
+- utter_location
+- utter_wrong_role
+- utter_ask_contact
+- utter_slots_values
+- utter_creator
+- utter_ask_cv_link
+- action_job
+- action_contact
+- utter_ask_Development_role
+- utter_ask_degree
+- action_store_applicant
+- action_show_details
+- action_sub_role
+- utter_ask_jobRef
 config:
   store_entities_as_slots: true
 entities:
-- jobRef
-- phone_number
+- experience_years
+- contact
+- email
 - name
-- sub_role
-- degree
 - job_title
+- sub_role
 - internshipRef
+- degree
+- phone_number
+- jobRef
 - cv_link
 - JobOptions
 - role
-- contact
-- experience_years
-- email
 forms:
-- apply_form
-- jobs_form
 - internship_form
+- jobs_form
+- apply_form
 intents:
+- inform_degree:
+    use_entities: true
+- what_can_you_do:
+    use_entities: true
+- inform_creator:
+    use_entities: true
 - inform_contact:
     use_entities: true
 - inform_job:
@@ -187,6 +195,15 @@ templates:
   - text: I am going to ask you a few question, do you want to apply ?
   utter_ask_cv_link:
   - text: ' send us a link with your resume or Linkedin Account'
+  utter_ask_degree:
+  - buttons:
+    - payload: Technician
+      title: Technician
+    - payload: Master
+      title: Master
+    - payload: Engineering
+      title: Engineering
+    text: what is your degree?
   utter_ask_detail:
   - buttons:
     - payload: Description
@@ -195,7 +212,7 @@ templates:
       title: Responsibilities
     - payload: Qualification
       title: Qualification
-    - payload: ApplicationProcedure
+    - payload: Application Procedure
       title: Application procedure
     text: Would you Like to learn more about this offer ?
   utter_ask_email:

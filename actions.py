@@ -11,7 +11,7 @@ import re
 # Our packages
 from repository.job_data import get_job_data, list_jobs, getRoleID ,generate_job_buttons
 from repository.applicant_data import saveApplicantData 
-from repository.internship_data import list_internships, generate_internship_buttons
+from repository.internship_data import list_internships,detail_internship, generate_internship_buttons
 from repository.entrepriseInfo import getEmail , getIntroduction, getLocation, getPhone
 
 
@@ -125,6 +125,17 @@ class Actioncontact(Action):
         email = getEmail(user_id)
         phone_number = getPhone(user_id)
         dispatcher.utter_message("call or email us on"+phone_number+"or" +email )
+        return []
+
+class InternshipShowDetails(Action):
+    def name(self):
+        return "internship_details"
+    def run(self, dispatcher, tracker, domain):
+        user_id = (tracker.current_state())["sender_id"]        
+        #get contact of user_id 
+        intern_ref= tracker.get_slot("internshipRef")
+        msg = detail_internship(intern_ref , user_id)
+        dispatcher.utter_message(msg)
         return []
 
 # Job Option Action

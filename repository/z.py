@@ -1,4 +1,5 @@
 import pyodbc
+import urllib.request
 
 cnxn = pyodbc.connect(
     "Driver={SQL Server Native Client 11.0};"
@@ -94,41 +95,82 @@ cursor = cnxn.cursor()
 # query = cursor.execute(f"INSERT INTO Applicant( Name, Experience_years, Apply_date, IdUserDb) VALUES ('islem', {Experience_years}, '{Apply_date}', '{userId}')")
 # cnxn.commit()
 
-
-
-def get_degree(degree):
-   choice = 0
-   if(degree.lower() == "master"):
-      choice = 1
-   if(degree.lower() == "technician"):
-      choice = 2
-   if(degree.lower() == "engineering"):
-      choice == 3
-
-   return choice
-
-
-def list_internships(user_id, degree):
-   degree = get_degree(degree)
-   if(degree == 0):
-      internships = cursor.execute(f"SELECT Title, RefInternship FROM internships WHERE IdUserDb='{user_id}'")  
-   internships = cursor.execute(f"SELECT Title, RefInternship FROM internships WHERE IdUserDb='{user_id}' and Degree={degree}")
+# def get_word(index):
+#    word_url = "http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type=text/plain"
+#    response = urllib.request.urlopen(word_url)
+#    long_txt = response.read().decode()
+#    words = long_txt.splitlines()
    
-   if not internships : 
-      return "no available internships opportunity at the moment"
+#    return words[index]
+# print(get_word(5))
 
-   possible_internships = []
+# def get_degree(degree):
+#    choice = 0
+#    if(degree.lower() == "master"):
+#       choice = 1
+#    if(degree.lower() == "technician"):
+#       choice = 2
+#    if(degree.lower() == "engineering"):
+#       choice == 3
+
+#    return choice
+
+
+# def list_internships(user_id, degree):
+#    degree = get_degree(degree)
+#    if(degree == 0):
+#       internships = cursor.execute(f"SELECT Title, RefInternship FROM internships WHERE IdUserDb='{user_id}'")  
+#    internships = cursor.execute(f"SELECT Title, RefInternship FROM internships WHERE IdUserDb='{user_id}' and Degree={degree}")
+   
+#    if not internships : 
+#       return "no available internships opportunity at the moment"
+
+#    possible_internships = []
+#    for row in internships:
+#       possible_internships.append(
+#          {
+#             "internshipRef": row[0],
+#             "internshipTitle": row[1]
+#          }
+#       )
+#    if len(possible_internships) == 0 : 
+#       possible_internships =  "no available internships opportunity at the moment"
+
+#    return possible_internships
+
+# result = list_internships("5587499e-a518-4303-946c-cc9fc96b5bba", "engineering")
+# print(result)
+
+import datetime 
+
+# result = internships = cursor.execute(f"SELECT Description, Technologies, Period, ExpirationDate FROM internships WHERE IdUserDb='5d9b8667-ef7e-42c2-830a-3e8d18d6e41d' and RefInternship='ref-84912'")
+
+# for row in result:
+#    description = row[0]
+#    technologies = row[1]
+#    period = row[2]
+#    deadline = row[3]
+
+# message = ""
+# if(datetime.datetime.now() < deadline):
+#    deadline = "" + deadline.strftime(f'''%d/%m/%Y''')
+#    message = f" description: {description} \n technologies:{technologies}\n period: {period}\n deadline: {deadline}"
+
+def detail_internship(ref, user_id):
+   internships = cursor.execute(f"SELECT Description, Technologies, Period, ExpirationDate FROM internships WHERE IdUserDb='{user_id}' and RefInternship='{ref}'")
+
    for row in internships:
-      possible_internships.append(
-         {
-            "internshipRef": row[0],
-            "internshipTitle": row[1]
-         }
-      )
-   if len(possible_internships) == 0 : 
-      possible_internships =  "no available internships opportunity at the moment"
+      description = row[0]
+      technologies = row[1]
+      period = row[2]
+      deadline = row[3]
 
-   return possible_internships
+   message = ""
+   if(datetime.datetime.now() < deadline):
+      deadline = "" + deadline.strftime(f'''%d/%m/%Y''')
+      message = f"description: {description} \n technologies:{technologies}\n period: {period}\n deadline: {deadline}"
+   
+   return message
 
-result = list_internships("5587499e-a518-4303-946c-cc9fc96b5bba", "engineering")
-print(result)
+message = detail_internship("ref-84912", "5d9b8667-ef7e-42c2-830a-3e8d18d6e41d")
+print(message)

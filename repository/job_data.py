@@ -50,6 +50,7 @@ def get_job_data(job_option, JobRef, user_id):
    job_option = transform_option(job_option)
    query = cursor.execute(f"SELECT {job_option.capitalize()} FROM jobs WHERE JobRef='{JobRef}' AND IdUserDb='{user_id}'")
 
+   job_data = ""
    for row in query:
       job_data = row[0]
 

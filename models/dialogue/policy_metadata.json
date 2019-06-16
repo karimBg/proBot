@@ -2,7 +2,6 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "internshipRef",
         "role",
         "sub_role",
         "jobRef"
@@ -11,15 +10,8 @@
     "utter_how_are_you": {
       "slots": []
     },
-    "internship_form": {
-      "slots": [
-        "requested_slot"
-      ]
-    },
-    "action_deactivate_form": {
-      "slots": [
-        "requested_slot"
-      ]
+    "internship_details": {
+      "slots": []
     },
     "utter_what_can_you_do": {
       "slots": []
@@ -35,6 +27,11 @@
         "jobRef"
       ]
     },
+    "action_deactivate_form": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
     "utter_greet": {
       "slots": []
     },
@@ -46,13 +43,13 @@
     },
     "apply_form": {
       "slots": [
-        "requested_slot",
-        "cv_link",
+        "jobRef",
         "name",
+        "cv_link",
+        "requested_slot",
         "phone_number",
         "experience_years",
-        "email",
-        "jobRef"
+        "email"
       ]
     },
     "utter_apply_slots_values": {
@@ -65,7 +62,7 @@
       "slots": []
     }
   },
-  "python": "3.6.4",
+  "python": "3.6.8",
   "max_histories": [
     2,
     5,
@@ -79,8 +76,8 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20190610-231329",
-  "rasa_core": "0.13.3",
+  "trained_at": "20190616-181825",
+  "rasa_core": "0.13.4",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.3"
 }

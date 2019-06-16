@@ -40,6 +40,10 @@
 - yes and i dont care
 - right on
 - i love that
+- i'd like to 
+- well okay
+- alright 
+- okay 
 
 ## intent:apply_job
 - I want to apply
@@ -47,10 +51,12 @@
 - i want to apply for that position
 
 ## intent:ask_detail
-- [description](JobOptions)
-- [mission](JobOptions)
-- [date](JobOptions)
-
+- [description](JobOptions:Description)
+- [Qualification](JobOptions)
+- [Description](JobOptions)
+- [Application Procedure](JobOptions)
+- [date](JobOptions:ApplicationDeadline)
+- [ApplicationDeadline](JobOptions)
 ## intent:deny
 - no
 - no new selection

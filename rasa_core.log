@@ -21374,3 +21374,581 @@ There is a memorised next action '0'
 Predicted next action using policy_1_MemoizationPolicy
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'hello'
+b'nice to meet you'
+b'who is your father'
+b'who is your boss'
+b'i went a job'
+b'Software Development'
+b'Front-End Development'
+b'job-83895\nReact developer'
+b'hello'
+b'hello from the other side'
+b'islem'
+b'karim'
+b'karim bhim'
+b'yes'
+b'karim bhim'
+b'Henda Kriaa'
+b'yes'
+b'2'
+b'50730571'
+b'islemdkjedkze'
+b'islem@email.com'
+b'https://www.linkedin.com/in/islem-mezghani-1a4369144/'
+b'Hello'
+b'hello'
+b"i'm looking for a new job"
+b'Software Development'
+b'Front-End Development'
+b'job-83895\nReact developer'
+b'yes'
+b'hi'
+b'jobs'
+b'Software Development'
+b'Back-End Development'
+b'job-63679\nnode js developer'
+b'ys'
+b'yes'
+b'karim'
+b'islem'
+b'yes'
+b'Islem Mezghani'
+b'2'
+b'50730571'
+b'islem@email.com'
+b'https://www.linkedin.com/in/stephengrider'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+b'hello'
+Creating a new tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'.
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.554453150498905}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '17'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: Hey!, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b"i 'm lookinf for an internship opportunity"
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'i 'm lookinf for an internship opportunity' with intent '{'name': 'inform_job', 'confidence': 0.35373718591102915}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '22'
+NLU confidence 0.35373718591102915 is lower than NLU threshold 0.4. 
+Predicted next action using policy_3_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b"i 'm looking for an internship opportunity"
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'i 'm looking for an internship opportunity' with intent '{'name': 'inform_job', 'confidence': 0.34745132552298136}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '22'
+NLU confidence 0.34745132552298136 is lower than NLU threshold 0.4. 
+Predicted next action using policy_3_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b"i'm looking for an internship opportunity"
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'i'm looking for an internship opportunity' with intent '{'name': 'inform_job', 'confidence': 0.3742920630375281}' and entities '[]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_inform_job': 1.0}]
+There is a memorised next action '22'
+NLU confidence 0.3742920630375281 is lower than NLU threshold 0.4. 
+Predicted next action using policy_3_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: sorry, I didn't understand you, please try input something else, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'slot_JobOptions_0': 1.0, 'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b"i'm looking for an internship opportunity"
+Creating a new tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'.
+Received user message 'i'm looking for an internship opportunity' with intent '{'name': 'inform_internship', 'confidence': 0.9443287253379822}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: None
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, None, None, {'slot_JobOptions_0': 1.0}, {'intent_inform_internship': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '42'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'utter_ask_degree' with prob 1.00.
+Action 'utter_ask_degree' ended with events '[]'
+Bot utterance 'BotUttered(text: what is your degree?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Technician",
+      "title": "Technician"
+    },
+    {
+      "payload": "Master",
+      "title": "Master"
+    },
+    {
+      "payload": "Engineering",
+      "title": "Engineering"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [None, None, {'slot_JobOptions_0': 1.0}, {'intent_inform_internship': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_1_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Technician'
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'Technician' with intent '{'name': 'inform_degree', 'confidence': 0.9286482334136963}' and entities '[{'start': 0, 'end': 10, 'value': 'Technician', 'entity': 'degree', 'confidence': 0.8342815842419916, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: Technician
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [None, {'slot_JobOptions_0': 1.0}, {'intent_inform_internship': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_internship' with prob 1.00.
+Calling action endpoint to run action 'action_internship'.
+Action 'action_internship' ended with events '[]'
+Bot utterance 'BotUttered(text: These are the available internship offers that we have right now, use the Internship Reference to learn more about an offer!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "design: ref-98863",
+      "title": "design: ref-98863"
+    },
+    {
+      "payload": "chatbot using rasa: ref-84912",
+      "title": "chatbot using rasa: ref-84912"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'slot_JobOptions_0': 1.0}, {'intent_inform_internship': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}, {'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'chatbot using rasa: ref-84912'
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'chatbot using rasa: ref-84912' with intent '{'name': 'inform_internship', 'confidence': 0.9418197870254517}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: Technician
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [{'intent_inform_internship': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}, {'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'internship_details' with prob 1.00.
+Calling action endpoint to run action 'internship_details'.
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'internship_details' ended with events '[]'
+There is no active form
+Current tracker state [{'intent_inform_internship': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}, {'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_internship_details': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b"i'm looking for an internship opportunity"
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'i'm looking for an internship opportunity' with intent '{'name': 'inform_internship', 'confidence': 0.9443287253379822}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: Technician
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [{'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}, {'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_internship_details': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'utter_ask_degree' with prob 1.00.
+Action 'utter_ask_degree' ended with events '[]'
+Bot utterance 'BotUttered(text: what is your degree?, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "Technician",
+      "title": "Technician"
+    },
+    {
+      "payload": "Master",
+      "title": "Master"
+    },
+    {
+      "payload": "Engineering",
+      "title": "Engineering"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_internship_details': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'Technician'
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'Technician' with intent '{'name': 'inform_degree', 'confidence': 0.9286482334136963}' and entities '[{'start': 0, 'end': 10, 'value': 'Technician', 'entity': 'degree', 'confidence': 0.8342815842419916, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: Technician
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [{'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_internship_details': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_internship' with prob 1.00.
+Calling action endpoint to run action 'action_internship'.
+Action 'action_internship' ended with events '[]'
+Bot utterance 'BotUttered(text: These are the available internship offers that we have right now, use the Internship Reference to learn more about an offer!, data: {
+  "elements": null,
+  "buttons": [
+    {
+      "payload": "chatbot using rasa: ref-84912",
+      "title": "chatbot using rasa: ref-84912"
+    }
+  ],
+  "attachment": null
+})'
+There is no active form
+Current tracker state [{'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_internship_details': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}, {'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+b'chatbot using rasa: ref-84912'
+Recreating tracker for id '5d9b8667-ef7e-42c2-830a-3e8d18d6e41d'
+Received user message 'chatbot using rasa: ref-84912' with intent '{'name': 'inform_internship', 'confidence': 0.9418197870254517}' and entities '[]'
+Logged UserUtterance - tracker now has 23 events
+Current slot values: 
+	JobOptions: None
+	contact: None
+	cv_link: None
+	degree: Technician
+	email: None
+	experience_years: None
+	internshipRef: None
+	jobRef: None
+	location: None
+	name: None
+	phone_number: None
+	requested_slot: None
+	role: None
+	sub_role: None
+There is no active form
+Current tracker state [{'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}, {'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'internship_details' with prob 1.00.
+Calling action endpoint to run action 'internship_details'.
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\rasa_core\actions\action.py", line 342, in run
+    response.raise_for_status()
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\requests\models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\rasa_core\processor.py", line 346, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Anaconda3\envs\nlp_course\lib\site-packages\rasa_core\actions\action.py", line 362, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'internship_details' ended with events '[]'
+There is no active form
+Current tracker state [{'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'prev_utter_ask_degree': 1.0, 'slot_JobOptions_0': 1.0}, {'intent_inform_degree': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0, 'entity_degree': 1.0}, {'intent_inform_degree': 1.0, 'prev_action_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'entity_degree': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_action_listen': 1.0}, {'intent_inform_internship': 1.0, 'slot_degree_0': 1.0, 'slot_JobOptions_0': 1.0, 'prev_internship_details': 1.0}]
+There is no memorised next action
+Predicted next action using policy_2_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from ./models/current/default/nlu\intent_classifier_tensorflow_embedding.ckpt
+b'internships'
+b'hi'
+b"i'm looking for an intership"
+b'internships'
+b'internships'
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b'chatbot using rasa: ref-84912'
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+b"i'm looking for an internship offer"
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+b'chatbot using rasa: ref-84912'
+b'Technician'
+b'chatbot using rasa: ref-84912'
+b"i'm looking for an internship offer"
+b'Technician'
+b'chatbot using rasa: ref-84912'
+b'ref-84912'
+b'Technician'
+b'ref-84912'
+b'hi'
+b'jobs'
+b'Software Development'
+b'Front-End Development'
+b'job-83895\nReact developer'
+b'no'
+b'Description'
+b"i'm looking for an internship offer"
+b'Technician'
+b'design: ref-76339'
+b"i'm looking for an internship offer"
+b'Technician'
+b'ref-76339'
+b"I'm looking for an internship offer"
+b'Technician'
+b'design: ref-76339'
+b"I'm looking for an internship offer"
+b'Technician'
+b'design: ref-76339'
+Failed to run custom action 'internship_details'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'internship_details'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+b"I'm looking for an internship offer"
+b'Technician'
+Failed to run custom action 'action_internship'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_internship'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.

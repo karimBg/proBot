@@ -53,3 +53,22 @@ def generate_internship_buttons(possible_internships):
       )
       
    return buttons
+
+def detail_internship(ref, user_id):
+   internships = cursor.execute(f"SELECT Description, Technologies, Period, ExpirationDate FROM internships WHERE IdUserDb='{user_id}' and RefInternship='{ref}'")
+
+   description = ""
+   technologies = ""
+   period = ""
+   deadline = ""
+   for row in internships.fetchall():
+      description = "" + row[0]
+      technologies = "" + row[1]
+      period = "" + row[2]
+      deadline = "" +row[3]
+
+   # if(datetime.datetime.now() < deadline):
+   #    deadline = "" + deadline.strftime(f'''%d/%m/%Y''')
+   message = f"description: {description} \ntechnologies:{technologies}\nperiod: {period}\ndeadline: {deadline}"
+   
+   return message

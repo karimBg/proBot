@@ -158,6 +158,22 @@
         "text": "i love that"
       },
       {
+        "intent": "affirm",
+        "text": "i'd like to"
+      },
+      {
+        "intent": "affirm",
+        "text": "well okay"
+      },
+      {
+        "intent": "affirm",
+        "text": "alright"
+      },
+      {
+        "intent": "affirm",
+        "text": "okay"
+      },
+      {
         "intent": "apply_job",
         "text": "I want to apply"
       },
@@ -175,7 +191,7 @@
           {
             "start": 0,
             "end": 11,
-            "value": "description",
+            "value": "Description",
             "entity": "JobOptions"
           }
         ],
@@ -186,12 +202,36 @@
         "entities": [
           {
             "start": 0,
-            "end": 7,
-            "value": "mission",
+            "end": 13,
+            "value": "Qualification",
             "entity": "JobOptions"
           }
         ],
-        "text": "mission"
+        "text": "Qualification"
+      },
+      {
+        "intent": "ask_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Description",
+            "entity": "JobOptions"
+          }
+        ],
+        "text": "Description"
+      },
+      {
+        "intent": "ask_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 21,
+            "value": "Application Procedure",
+            "entity": "JobOptions"
+          }
+        ],
+        "text": "Application Procedure"
       },
       {
         "intent": "ask_detail",
@@ -199,11 +239,23 @@
           {
             "start": 0,
             "end": 4,
-            "value": "date",
+            "value": "ApplicationDeadline",
             "entity": "JobOptions"
           }
         ],
         "text": "date"
+      },
+      {
+        "intent": "ask_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "ApplicationDeadline",
+            "entity": "JobOptions"
+          }
+        ],
+        "text": "ApplicationDeadline"
       },
       {
         "intent": "deny",
@@ -528,6 +580,22 @@
       {
         "intent": "how_are_you",
         "text": "how are you"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "what is your Address"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "how can i get to you"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "what is your Location"
+      },
+      {
+        "intent": "inform_Location",
+        "text": "where are you currently positioned"
       },
       {
         "intent": "inform_apply",
@@ -1282,100 +1350,28 @@
         "text": "i need your contact"
       },
       {
-        "intent": "inform_Location",
-        "text": "what is your Address"
+        "intent": "inform_creator",
+        "text": "who is your father"
       },
       {
-        "intent": "inform_Location",
-        "text": "how can i get to you"
+        "intent": "inform_creator",
+        "text": "who created you"
       },
       {
-        "intent": "inform_Location",
-        "text": "what is your Location"
+        "intent": "inform_creator",
+        "text": "who developed you"
       },
       {
-        "intent": "inform_Location",
-        "text": "where are you currently positioned"
+        "intent": "inform_creator",
+        "text": "who is your boss"
       },
       {
-        "intent": "inform_industies",
-        "text": "what is your type of work"
+        "intent": "inform_creator",
+        "text": "who designed you"
       },
       {
-        "intent": "inform_industies",
-        "text": "tell me about you solution"
-      },
-      {
-        "intent": "inform_industies",
-        "text": "what is your domain of work"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-54125",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-54125"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-02146",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-02146"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-87732",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-87732"
-      },
-      {
-        "intent": "inform_internship",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Ref-98523",
-            "entity": "internshipRef"
-          }
-        ],
-        "text": "Ref-98523"
-      },
-      {
-        "intent": "inform_internship",
-        "text": "i'm looking for internship opportunity at your firm"
-      },
-      {
-        "intent": "inform_internship",
-        "text": "what are the available project for internship"
-      },
-      {
-        "intent": "inform_internship",
-        "text": "i'm a student and looking for an internship"
-      },
-      {
-        "intent": "inform_internship",
-        "text": "I'm looking for an internship"
-      },
-      {
-        "intent": "inform_internship",
-        "text": "internship"
+        "intent": "inform_creator",
+        "text": "who is your father"
       },
       {
         "intent": "inform_degree",
@@ -1460,6 +1456,86 @@
           }
         ],
         "text": "I'm have an Engineering"
+      },
+      {
+        "intent": "inform_industies",
+        "text": "what is your type of work"
+      },
+      {
+        "intent": "inform_industies",
+        "text": "tell me about you solution"
+      },
+      {
+        "intent": "inform_industies",
+        "text": "what is your domain of work"
+      },
+      {
+        "intent": "inform_internship",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Ref-54125",
+            "entity": "internshipRef"
+          }
+        ],
+        "text": "Ref-54125"
+      },
+      {
+        "intent": "inform_internship",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Ref-02146",
+            "entity": "internshipRef"
+          }
+        ],
+        "text": "Ref-02146"
+      },
+      {
+        "intent": "inform_internship",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Ref-87732",
+            "entity": "internshipRef"
+          }
+        ],
+        "text": "Ref-87732"
+      },
+      {
+        "intent": "inform_internship",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Ref-98523",
+            "entity": "internshipRef"
+          }
+        ],
+        "text": "Ref-98523"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "i'm looking for internship opportunity at your firm"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "what are the available project for internship"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "i'm a student and looking for an internship"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "I'm looking for an internship"
+      },
+      {
+        "intent": "inform_internship",
+        "text": "internship"
       },
       {
         "intent": "inform_job",
@@ -1894,58 +1970,6 @@
         "text": "it was nice meeting you"
       },
       {
-        "intent": "inform_creator",
-        "text": "who is your father"
-      },
-      {
-        "intent": "inform_creator",
-        "text": "who created you"
-      },
-      {
-        "intent": "inform_creator",
-        "text": "who developed you"
-      },
-      {
-        "intent": "inform_creator",
-        "text": "who is your boss"
-      },
-      {
-        "intent": "inform_creator",
-        "text": "who designed you"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "help"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "what can you do"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "what can you help me with"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "what is your mission"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "what is your purpose"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "what can you do for me"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "how can you help me"
-      },
-      {
-        "intent": "what_can_you_do",
-        "text": "what can you help me with"
-      },
-      {
         "intent": "stop",
         "text": "ok then you cant help me"
       },
@@ -2020,6 +2044,42 @@
       {
         "intent": "stop",
         "text": "nothing else?"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "help"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you do"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you help me with"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what is your mission"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what is your purpose"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you do for me"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "how can you help me"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you help me with"
+      },
+      {
+        "intent": "what_can_you_do",
+        "text": "what can you do ?"
       }
     ],
     "regex_features": [
@@ -2050,6 +2110,18 @@
     ],
     "lookup_tables": [],
     "entity_synonyms": [
+      {
+        "value": "Description",
+        "synonyms": [
+          "description"
+        ]
+      },
+      {
+        "value": "ApplicationDeadline",
+        "synonyms": [
+          "date"
+        ]
+      },
       {
         "value": "UI/UX Design",
         "synonyms": [

@@ -13,7 +13,7 @@ def train_nlu(data, configs, model_dir):
 
 def run_nlu():
     interpreter = Interpreter.load("./models/current/default/nlu")
-    print(interpreter.parse(u"i'm currently looking for a job"))
+    print(interpreter.parse(u"ref-23322"))
 
 
 if __name__ == "__main__":
